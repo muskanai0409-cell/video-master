@@ -4,6 +4,7 @@ Small helpers made during the films. Each one was used for real and needs no ins
 
 | Tool | What it does | Use |
 |---|---|---|
+| `study_video.py` | Measures a reference video (motion with the `qa.md` 2.3 metric, longest still, cuts, median shot, loudness) and makes an exact 16-frame sheet, a strip of the first 2.5s and a strip of the last 4s | `python3 study_video.py ref.mp4 [out_dir]`. Built for the 2026-10-06 video study (`../../references/video-study.md`); each sheet frame comes from its own seek, because a `select` window bunches frames at 60fps |
 | `framehash.py` | Prints an md5 for every raw frame of a `./render raw` stream | The determinism check: two runs must give identical hashes. In v4, 85 of the first 400 frames differed while CoreGraphics drew frames in parallel; after the one-thread fix 0 differ |
 | `raster.swift` | Rasterises any image NSImage can read (SVG, PDF, PNG) to a PNG with real alpha, at a given max side | `swiftc -O raster.swift -o raster && ./raster logo.svg logo.png 512`. `sips` flattens onto white, so it can't be used for this |
 | `fixarc.py` | Rewrites compact SVG arc flags (`a1 1 0 0110 10` style) into spaced form before rasterising | Some logos (Codex, Hermes) drew wrong until their arc flags were spaced out |
