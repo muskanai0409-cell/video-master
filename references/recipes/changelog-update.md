@@ -9,15 +9,15 @@ A recurring "what shipped" video: a host plus one proof insert per item. It runs
 - Rebuild the inserts in vector from the live console, never as screen-recording upscales.
 - Words follow her voice rules.
 
-## Targets (5 changelog updates)
+## Targets (6 changelog updates)
 
 | Measure | Median | Use |
 |---|---|---|
-| Length | 75s | About 75s for 5 to 7 items. Her 140s cut would fit in about 75s with the small fixes folded into one card |
-| Moving | 73% | 70%+ (walk-and-talk footage moves on its own) |
-| Longest still | 2.3s | Under 2s. 1#1 holds one screen for 10.8s, which is its weak spot |
+| Length | 108s | About 75s for 5 to 7 items. Her 140s cut would fit in about 75s with the small fixes folded into one card |
+| Moving | 67% | 70%+ (walk-and-talk footage moves on its own) |
+| Longest still | 2.0s | Under 2s. 1#1 holds one screen for 10.8s, which is its weak spot |
 | Cuts | | Hard cuts between host and insert. The detector logs 0 for dissolve-joined cuts like 2#22 |
-| Loudness | -19.1 LUFS (3 audible) | Dialogue-led, so about -16 to -19 |
+| Loudness | -21.1 LUFS (4 audible) | Dialogue-led, so about -16 to -19 |
 
 ## Beat template: about 75s, 5 items
 

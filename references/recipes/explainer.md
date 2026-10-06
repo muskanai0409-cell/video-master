@@ -1,6 +1,6 @@
 # Recipe: explainer
 
-A film that explains how one thing works. It runs 27 to 80s for social, and much longer for essay-style pieces. 10 of 156 in the set.
+A film that explains how one thing works. It runs 27 to 80s for social, and much longer for essay-style pieces. 20 of 304 in the set.
 
 **Use it when** the mechanism is the subject.
 
@@ -12,15 +12,15 @@ A film that explains how one thing works. It runs 27 to 80s for social, and much
 
 This recipe adds what the bookmarked explainers do well.
 
-## Targets (10 explainers, medians)
+## Targets (20 explainers, medians)
 
 | Measure | Median | Use |
 |---|---|---|
 | Length | 65s | 25 to 30s for her 16:9 cuts; 60 to 70s only for a full mechanism |
-| Moving | 50% | 60%+ (her rule). The set moves least of any format here, and its slow builds are where viewers drop |
+| Moving | 44% | 60%+ (her rule). Explainers move less than every format except tutorials |
 | Longest still | 2.6s | about 1s before the end card |
 | Cuts per minute | 0 | Continuous builds; every explainer here except the talking ones has no detected cut |
-| Loudness | -16.1 LUFS | -14 when scored |
+| Loudness | -16.8 LUFS | -14 when scored |
 
 ## Beat template: 30s
 
@@ -55,7 +55,7 @@ This recipe adds what the bookmarked explainers do well.
 
 ## Pitfalls
 
-- Slow builds that leave the frame still (median 50% moving here).
+- Slow builds that leave the frame still (median 44% moving here).
 - Unsourced numbers.
 - An 8-minute generated lecture with one small icon for the first 3s (1#14): it only works when the post carries the hook.
 

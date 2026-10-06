@@ -1,21 +1,21 @@
 # Recipe: ad
 
-A short brand piece that borrows a genre or tells a small story, with the product as the payoff rather than the subject. It runs 15 to 140s. 8 of 156 in the set.
+A short brand piece that borrows a genre or tells a small story, with the product as the payoff rather than the subject. It runs 15 to 140s. 9 of 304 in the set.
 
 **Use it when** the goal is attention and a feeling (a teaser, a stunt, a cultural moment), not a demo.
 
 **On supermemory** her brand rules still apply. Never imitate a real brand's product, name or trade dress, even as parody.
 
-## Targets (8 ads, medians)
+## Targets (9 ads, medians)
 
 | Measure | Median | Use |
 |---|---|---|
-| Length | 45s | 15 to 25s for a teaser; 60 to 140s only with a story |
-| Moving | 77% | 75%+ |
-| Longest still | 0.9s | under 1s |
-| Cuts per minute | 15.1 | 15 to 40, with a fixed anchor when fast (see below) |
-| Median shot | 3.0s | 1 to 3s |
-| Loudness | -17.5 LUFS | -14 |
+| Length | 48s | 15 to 25s for a teaser; 60 to 140s only with a story |
+| Moving | 75% | 75%+ |
+| Longest still | 1.0s | under 1s |
+| Cuts per minute | 15.2 | 15 to 40, with a fixed anchor when fast (see below) |
+| Median shot | 2.8s | 1 to 3s |
+| Loudness | -18.2 LUFS | -14 |
 
 ## Shapes that worked
 

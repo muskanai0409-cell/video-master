@@ -1,6 +1,6 @@
 # Recipe: memory scenes
 
-How to show memory on screen: writing it, recalling it, updating it and inspecting it. These scenes slot into any film about supermemory (a launch, a demo, an explainer, a reel). They come from what worked in the 156 bookmarked videos and from supermemory's own films in the set.
+How to show memory on screen: writing it, recalling it, updating it and inspecting it. These scenes slot into any film about supermemory (a launch, a demo, an explainer, a reel). They come from what worked in the 304 bookmarked videos and from supermemory's own films in the set.
 
 **Truth first.** Memory is injected into the model's context. Never draw weights changing, "learning overnight" or training (SKILL.md section 2). Every number on screen needs a source.
 
@@ -18,8 +18,8 @@ How to show memory on screen: writing it, recalling it, updating it and inspecti
 | 2#16 | 25% |
 | 2#17 | 28% |
 | 3#33 | 24% |
-| Demos elsewhere | 63% |
-| UI-morph reels elsewhere | 81% |
+| Demos elsewhere (median of 49) | 60% |
+| UI-morph reels with 500K+ views | 81% |
 
 ## Scenes
 
@@ -98,6 +98,18 @@ How to show memory on screen: writing it, recalling it, updating it and inspecti
 ### 10. One anchor through a montage
 
 - **What:** one memory dot or tile at fixed screen coordinates while scenes change around it. Fast cuts then read as one thought (1#19's arc, 2#4's orange dot).
+
+### 11. Two lanes, side by side
+
+- **What:** the same prompt run with and without memory, two lanes stepping turn by turn, with token, time and cost counters and a red note where the memory-less side fails. Dhravya's markdown film and blog widget already do this (batches 8 and 10); make the text big enough for a phone.
+
+### 12. The approval beat
+
+- **What:** a human checkpoint as the trust moment: the agent proposes a memory update or an action, the user clicks Allow, and the state flips to Live. Four launch videos in the second pass use this as their climax.
+
+### 13. The loop
+
+- **What:** a 3 to 10s loop with one fixed thing and one changing thing: the supermemory mark held in a dock while agent icons swap through the slot beside it (batch 8). Good for a pinned post or a site hero.
 
 ## Endings for memory films
 

@@ -1,20 +1,20 @@
 # Recipe: talking head
 
-A person on camera carries it (a founder, a host, a creator), with graphics and product inserts around them. It runs 19s to 20min. 12 of 156 in the set.
+A person on camera carries it (a founder, a host, a creator), with graphics and product inserts around them. It runs 19s to 20min. 40 of 304 in the set, including 18 podcasts, interviews and talks over 10 minutes.
 
 **Use it when** a person's credibility, story or news is the point.
 
 **On supermemory** edits of her own footage follow the pack's `muskan-editing-style`, not explainer motion rules (SKILL.md section 0). Inserts are rebuilt UI.
 
-## Targets (12 talking heads, medians)
+## Targets (22 talking heads of 10 minutes or less, medians)
 
 | Measure | Median | Use |
 |---|---|---|
-| Length | 151s | 60 to 150s for a launch; the long ones are interviews and episodes |
+| Length | 89s | 60 to 150s for a launch. For podcast clips, cut one complete answer of 25 to 80s (batch 12) |
 | Moving | 79% | 75%+ (people move; punch-ins help) |
-| Longest still | 1.2s | under 1.5s |
+| Longest still | 1.0s | under 1.5s |
 | Cuts per minute | 4.0 | Punch-in and punch-out every 3 to 6s; a 2.2s median shot keeps a 94s conversation moving (5#5) |
-| Loudness | -15.7 LUFS | -16 to -19 for dialogue |
+| Loudness | -17.8 LUFS | -16 to -19 for dialogue |
 
 ## Beat template: a founder launch, about 90s
 

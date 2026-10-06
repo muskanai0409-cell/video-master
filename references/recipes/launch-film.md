@@ -1,6 +1,6 @@
 # Recipe: launch film
 
-A designed film that announces one new thing: a product, a feature, an integration or a raise. It runs 20 to 120s and is the most common format in her bookmarks (48 of 156).
+A designed film that announces one new thing: a product, a feature, an integration or a raise. It runs 20 to 120s and is the most common format in her bookmarks (59 of 304).
 
 **Use it when** there is something new with a name and one task that proves it.
 
@@ -23,16 +23,16 @@ A designed film that announces one new thing: a product, a feature, an integrati
 
 The "viral" register has its own sub-skill in her pack, `quirky-product-reels`.
 
-## Targets (48 launch films, medians)
+## Targets (59 launch films, medians)
 
-| | All | 500K+ views (18) | Use |
+| | All | 500K+ views (20) | Use |
 |---|---|---|---|
-| Length | 53s | 73s | Designed launches run 29 to 56s and founder-led ones 65 to 200s. Her 16:9 cap is about 25 to 30s, unless comprehension needs more |
-| Moving | 77% | 72% | 70 to 80% |
+| Length | 58s | 76s | Designed launches run 29 to 56s and founder-led ones 65 to 200s. Her 16:9 cap is about 25 to 30s, unless comprehension needs more |
+| Moving | 76% | 66% | 70 to 80% |
 | Longest still | 1.4s | 1.4s | about 1s before the end card |
-| Cuts per minute | 8.8 | 11.8 | UI-led launches 0 to 4; footage, 3D and AI-footage launches 13 to 26 |
-| Median shot | 4.2s | 3.3s | |
-| Loudness | -14.4 LUFS | -14.0 | Music-led -10 to -14; founder dialogue -16 to -23 |
+| Cuts per minute | 9.6 | 12.8 | UI-led launches 0 to 4; footage, 3D and AI-footage launches 13 to 26 |
+| Median shot | 4.0s | 3.3s | |
+| Loudness | -14.6 LUFS | -14.9 | Music-led -10 to -14; founder dialogue -16 to -23 |
 
 Craft does not predict views: see `video-study.md` section 2. Announcements from big accounts, with people on screen and borrowed recognition, drew the most views.
 

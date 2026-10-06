@@ -2,7 +2,7 @@
 
 A run of features or agents built from rebuilt UI and kinetic type, moving as one continuous gesture with almost no cuts. It runs 14 to 67s.
 
-This is the most code-native format in the set and the one that moved most: 81% median. In the launch batch, 7 of 26 were this shape, and they include the 5.4M-view X launch (5#3).
+This is the most code-native format in the set. The ones with 500K+ views move 81% of the time (the median across all 20 is 66%). In the launch batch, 7 of 26 were this shape, and they include the 5.4M-view X launch (5#3).
 
 **Use it when:**
 - there are several features, agents, roles or integrations to show;
@@ -10,15 +10,15 @@ This is the most code-native format in the set and the one that moved most: 81% 
 
 **On supermemory** her surface still applies (SKILL.md section 1): white or paper ground, square corners, Geist, one blue accent for the proof. This is the format her rossaxbt references come from (3#12, 3#23).
 
-## Targets (9 UI-morph reels, medians)
+## Targets (20 UI-morph reels, medians)
 
 | Measure | Median | Use |
 |---|---|---|
-| Length | 37s | 30 to 40s for a roster; 14s for a single morph |
-| Moving | 81% | 80%+ |
+| Length | 38s | 30 to 40s for a roster; 14s for a single morph |
+| Moving | 66% (81% for the 7 with 500K+ views) | 80%+ |
 | Longest still | 1.9s | about 1s before the end card |
-| Cuts per minute | 0.9 | 0 to 4: morphs, pushes and crops, not cuts |
-| Loudness | -14.8 LUFS | -14 |
+| Cuts per minute | 0 | 0 to 4: morphs, pushes and crops, not cuts |
+| Loudness | -14.7 LUFS | -14 |
 
 ## Beat template: the roster, about 35s
 

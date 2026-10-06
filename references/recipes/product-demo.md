@@ -1,6 +1,6 @@
 # Recipe: product demo
 
-A film of the product doing one real job: a capture, a rebuilt UI or a live object. It runs 10 to 90s and is the second most common format in her bookmarks (27 of 156).
+A film of the product doing one real job: a capture, a rebuilt UI or a live object. It runs 10 to 90s and is the second most common format in her bookmarks (49 of 304).
 
 **Use it when** the product itself is the proof.
 
@@ -12,15 +12,15 @@ A film of the product doing one real job: a capture, a rebuilt UI or a live obje
 
 **On supermemory** rebuild the UI in vector from the measured DOM; never upscale a screen recording (her 2026-10-05 rule). Give memory its own lane (see `memory-scenes.md`).
 
-## Targets (27 product demos, medians)
+## Targets (49 product demos, medians)
 
-| | All | 500K+ views (6) | Use |
+| | All | 500K+ views (8) | Use |
 |---|---|---|---|
-| Length | 30s | 43s | One-task demos 20 to 40s; walkthroughs up to 90s |
-| Moving | 63% | 60% | 70%+ for her. Interaction demos in batch 3 median 88%; plain agent screen recordings 17% |
+| Length | 33s | 43s | One-task demos 20 to 40s; walkthroughs up to 90s |
+| Moving | 60% | 54% | 70%+ for her. Interaction demos in batch 3 median 88%; plain agent screen recordings 17% |
 | Longest still | 1.1s | 1.3s | about 1s |
 | Cuts per minute | 0 | 0 | Continuous: camera, cursor and crops do the work |
-| Loudness | -18.4 LUFS (15 audible) | -18.4 | -14 if it carries music; 12 of 27 are silent |
+| Loudness | -17.4 LUFS (30 audible) | -19.4 | -14 if it carries music; 20 of 49 are silent |
 
 ## Beat template: one-task demo, about 23s (after 5#18)
 
