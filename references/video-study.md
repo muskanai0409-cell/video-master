@@ -1,6 +1,6 @@
-# Video study: what 156 bookmarked videos do
+# Video study: what 304 bookmarked videos do
 
-On 2026-10-06 every video in her kept motion and design bookmarks was downloaded for study, measured and read frame by frame. That is 163 posts and 156 unique videos, posted from June to October 2026. The video files were never added to this repo.
+Every video in her X bookmarks was downloaded for study, measured and read frame by frame: 295 posts, 319 video files and 304 unique videos, posted from June to October 2026. The motion and design picks (batches 1 to 6, 156 videos) were studied on 2026-10-06, and every other video bookmark (batches 7 to 12, 148 more) on 2026-10-07. The video files were never added to this repo.
 
 - `library/videos/` holds the per-video notes, one file per study batch, plus an index of every video with its link and numbers.
 - This file is the synthesis.
@@ -37,54 +37,56 @@ Read it when planning any video, choosing a format or its targets, or when she s
 
 ## 2. Measured benchmarks
 
-156 unique videos, medians. Loudness is over the audible videos only (count in brackets).
+304 unique videos (all 295 video bookmarks), medians. Loudness is over the audible videos only (count in brackets).
 
 | Format | Videos | Length | Moving | Longest still | Cuts/min | Median shot | LUFS |
 |---|---|---|---|---|---|---|---|
-| launch film | 48 | 53s | 77% | 1.4s | 8.8 | 4.2s | -14.4 (48) |
-| product demo | 27 | 30s | 63% | 1.1s | 0 | 20.4s | -18.4 (15) |
-| other (breakdowns, loops, sketches) | 18 | 35s | 67% | 1.1s | 0.9 | 10.2s | -15.0 (10) |
-| talking head | 12 | 151s | 79% | 1.2s | 4.0 | 6.1s | -15.7 (12) |
-| explainer | 10 | 65s | 50% | 2.6s | 0 | 49s | -16.1 (10) |
-| UI-morph reel | 9 | 37s | 81% | 1.9s | 0.9 | 31s | -14.8 (9) |
-| ad | 8 | 45s | 77% | 0.9s | 15.1 | 3.0s | -17.5 (8) |
-| screen capture | 7 | 15s | 88% | 0.9s | 0 | 10s | (1) |
+| launch film | 59 | 58s | 76% | 1.4s | 9.6 | 4.0s | -14.6 (59) |
+| product demo | 49 | 33s | 60% | 1.1s | 0 | 13.9s | -17.4 (30) |
+| other (memes, loops, clips, breakdowns) | 46 | 23s | 74% | 0.5s | 0 | 8.8s | -14.8 (30) |
+| talking head (incl. podcasts, interviews, talks) | 40 | 301s | 78% | 1.5s | 3.8 | 7.9s | -19.6 (40) |
+| screen capture | 33 | 15s | 59% | 1.0s | 0 | 12.4s | -18.8 (8) |
+| explainer | 20 | 65s | 44% | 2.6s | 0 | 26.3s | -16.8 (17) |
+| UI-morph reel | 20 | 38s | 66% | 1.9s | 0 | 30.2s | -14.7 (20) |
+| tutorial | 14 | 151s | 28% | 3.6s | 2.0 | 19.3s | -20.1 (12) |
+| ad | 9 | 48s | 75% | 1.0s | 15.2 | 2.8s | -18.2 (9) |
+| changelog update | 6 | 108s | 67% | 2.0s | 1.1 | 12.7s | -21.1 (4) |
 | AI-footage showcase | 6 | 28s | 80% | 0.1s | 13.4 | 3.7s | -14.7 (6) |
-| changelog update | 5 | 75s | 73% | 2.3s | 0 | 18s | -19.1 (3) |
-| tutorial | 4 | 111s | 15% | 3.6s | 0 | 56s | -23.6 (3) |
 | showreel | 2 | 15s | 100% | 0s | 0 | 15s | (1) |
-| **all** | **156** | **43s** | **73%** | **1.3s** | **2.2** | **10.3s** | **-15.5 (126)** |
+| **all** | **304** | **49s** | **70%** | **1.4s** | **1.4** | **11.2s** | **-16.8 (236)** |
+
+Talking heads of 10 minutes or less (22): median 89s, 79% moving, 4.0 cuts/min, -17.8 LUFS.
 
 | Views | Videos | Length | Moving | Longest still | Cuts/min |
 |---|---|---|---|---|---|
-| 500K and up | 44 | 66s | 73% | 1.5s | 7.9 |
-| 100K to 500K | 51 | 33s | 75% | 1.0s | 0.7 |
-| under 100K | 61 | 37s | 75% | 1.4s | 2.2 |
+| 500K and up | 70 | 67s | 73% | 1.5s | 3.6 |
+| 100K to 500K | 96 | 47s | 73% | 1.2s | 0.8 |
+| under 100K | 138 | 40s | 66% | 1.3s | 1.8 |
 
 **Targets that hold across formats**
-- **Movement:** 70 to 80% of frames moving. 64% of the set reaches 60%. Keep the longest still around 1.5s or less: 72% of the set stays at or under 2s, and only 16 of 156 hold a still over 3s, mostly tutorials, explainers and changelogs.
+- **Movement:** 70 to 80% of frames moving. 60% of the set reaches 60%. Keep the longest still around 1.5s or less: 68% of the set stays at or under 2s, and 45 of 304 hold a still over 3s, mostly tutorials, explainers, captures and changelogs.
 - **Cut rate by type:**
   - Product UI films move by camera, cursor and morph rather than cuts: demos and UI-morph reels median 0 to 1 cut a minute.
   - Footage-led launch films, ads and AI-footage pieces cut at 9 to 15 a minute, with 3 to 4s shots.
-  - 61 of 156 videos have no detected cut.
-- **Aspect:** 16:9 by default (113 of 156, and 37 of the 44 with 500K+ views).
-- **Loudness:** finished social cuts sit near -14 LUFS, with launch films at a median -14.4. Dialogue-led pieces sit at -16 to -23. 31 of 156 have no audio or a silent track, almost all of them captures and demos.
+  - 133 of 304 videos have no detected cut.
+- **Aspect:** 16:9 by default (200 of 304, and 53 of the 70 with 500K+ views).
+- **Loudness:** finished social cuts sit near -14 LUFS, with launch films at a median -14.4. Dialogue-led pieces sit at -16 to -23. 70 of 304 have no audio or a silent track, almost all of them captures, loops and demos.
 
 **What predicts views: nothing measured in the craft.** Spearman correlation between views and:
-- moving %: 0.01
-- cuts per minute: 0.06
-- longest still: 0.01
-- length: 0.21, because big launches run longer
+- moving %: 0.11
+- cuts per minute: 0.01
+- longest still: -0.01
+- length: 0.12, because big launches and podcasts run longer
 
-The 500K+ group moves as much as the rest. What the top-viewed share, from the notes rather than the metrics:
+The 500K+ group moves about as much as the rest (73% against 73% and 66%). What the top-viewed share, from the notes rather than the metrics:
 - **They announce something:** a product, an update, a raise, a mission. "Look what the model made" posts sat at 122K to 606K (batch 1).
 - **They have reach or borrowed recognition:** a big account, a famous CEO's comment, partner logos, a co-brand. The same graph clip with the same caption drew 340K one day and 42K another (6#4, 6#20).
 - **People are on screen:** 4 of batch 1's top 6.
 - **Frame 0 is the subject,** one new named thing appears in the first 15s, and there is one proof device.
 
-**supermemory's own films in the set (14)**
+**supermemory's own films in the first pass (14)**
 - Overall they look like the rest: median 45s, 71% moving, -14.6 LUFS.
-- Their product-UI films move much less: the MCP launch (2#10) 53%, Muse Code (2#21) 63%, SMFS (2#23) 53%, eve (2#16) 25%, Keiki (2#17) 28%, the summarize clip (3#33) 24%. Demos elsewhere median 63% and UI-morph reels 81%.
+- Their product-UI films move much less: the MCP launch (2#10) 53%, Muse Code (2#21) 63%, SMFS (2#23) 53%, eve (2#16) 25%, Keiki (2#17) 28%, the summarize clip (3#33) 24%. Across all 304, demos median 60% and UI-morph reels 66% (81% among the 500K+ ones).
 - The learner-1 launch film (1#6) holds a 3s still and is mastered at -7.1 LUFS, the loudest in the set. Keiki sits at -34.9, which is effectively silent.
 
 ---
@@ -327,7 +329,7 @@ All six batches.
 8. **Change the visual metaphor.**
    - Four supermemory films (2#10, 2#16, 2#17, 2#21) share the save-then-recall relay, and two (2#16, 2#21) share the same dark chat-plus-panel layout. Keep the relay and change the surface.
    - "Written in one tool, recalled in another" can be a ground switch like 5#19's light and dark modes.
-9. **Move more.** Her product-UI films measure 24 to 63% moving, against 63% for demos and 81% for UI-morph reels here. Push in, keep the cursor working, and morph instead of holding.
+9. **Move more.** Her product-UI films measure 24 to 63% moving, against a 60% demo median and 81% for the UI-morph reels with 500K+ views. Push in, keep the cursor working, and morph instead of holding.
 10. **Mix to about -14 LUFS.** The learner-1 film sits at -7.1, and the Keiki clip at -34.9.
 11. **Use the product's own words.** Per Dhravya's MCP note, use the term the docs, code and posts use.
 
@@ -335,10 +337,47 @@ All six batches.
 
 ---
 
-## 13. Where the evidence is
+## 13. What the second pass added (2026-10-07, batches 7 to 12)
+
+The 148 other video bookmarks (launch posts, demos, captures, memes, talking heads, podcasts) mostly confirm the first pass. Motion comes from camera and UI (16 to 19 of each batch of about 30 have no detected cut), one task end to end works, and the install shown literally works. New or sharper:
+- **Frame 0 can be the finished result or a poster,** if motion starts at once: the payoff first, then reset and replay it (batch 7, Firecrawl and Jev), the $1B claim on frame 0 then built from 0.05s (batch 9). Near-static top videos won on reach, not craft.
+- **A live dashboard for invisible work:**
+  - counters for items, elapsed time and cost so far;
+  - a grid being worked through;
+  - one detail card that swaps.
+
+  The counters end on the exact numbers the post claims. A counter written as a running sentence lets the clip's own runtime prove the claim.
+- **A receipt on every card:** the call, the seconds and the cost. Show what the video's own calls cost as the price proof.
+- **Side by side, honestly:**
+  - run the same task twice, dim the idle window and label any speed-up;
+  - show two memory lanes for one prompt, with token, time and cost counters and red notes where one fails (Dhravya's markdown film does this, but its text is too small for a phone);
+  - step one conversation turn by turn on both sides (Dhravya's blog widget).
+- **A human checkpoint as the trust beat:** an approval flipping to Live, an Allow button or a handoff card. Four videos use it as the climax.
+- **Before and after the stack:** the user's boxes slide into your container.
+- **Loops of 3 to 10s:** one fixed thing and one changing thing, such as a mark held in a dock while agent icons swap through the slot beside it.
+- **The founder as background:** a giant number behind the head, then the frame shrinks into a UI panel with numbered steps.
+- **For memory explainers:**
+  - explore one diagram with the camera;
+  - frame memory as where every correction to an agent goes;
+  - explain with one example that shares no keywords with the question, then one chart per number.
+- **Install, then autonomy:** after the install, the agent uses the new tool on its own (one paste, then green checks).
+- **Type the brief as one line over live footage** instead of cutting to UI.
+- **Long form:**
+  - over 2 minutes, open with a 30 to 50s trailer, then chapter or level cards;
+  - podcast clips work as one complete answer of 25 to 80s, opening on a listener shot under 1s, with the claim and a question in the post;
+  - tutorials sell before they teach, keep one fixed screen-plus-webcam layout, and had the highest save rate (1.1% of views against 0.03% for a viral clip).
+- **Zoom onto one control or number per beat.** Every unzoomed capture was unreadable at phone size.
+- **Numbers on screen must match the post.** One partner film shows 8,000+ tools while its post says 16,000+.
+- **Avoid a mascot inside a ring of logos.** Three launch videos open on exactly that.
+- **Endings:**
+  - clips, captures and loops mostly end with no card (17 of 29, 19 of 31 and 14 of 28 in three batches), and their links live in the post;
+  - produced films end on a card, but the hold must last 3 to 5s, since logos held 0.5 to 1s don't register and one URL lasts only 1.4s;
+  - none of batch 9's top six ends on a URL or command.
+
+## 14. Where the evidence is
 
 - `library/videos/README.md`: every video by format, with its link, length, views and measured numbers.
-- `library/videos/1-reels-a.md` to `6-launches-b.md`: the per-video notes, each with:
+- `library/videos/1-reels-a.md` to `12-more-f.md`: the per-video notes, each with:
   - the hook in the first 3s;
   - the beats with times;
   - the ending;
