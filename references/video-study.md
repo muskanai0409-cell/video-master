@@ -143,7 +143,7 @@ Slow opens only work when the post copy carries the hook.
 
 **Runtime budgets that worked**
 - **Cloudflare rebrand** (2#3), read from its breakdown's chapter bar (2#2): intro 20%, demo 14%, social proof 7%, features 10%, use cases 24%, outro 24%.
-- **Film breakdown** (3#20): acts of 3, 7, 23, 3 and 5s.
+- **Film breakdown** (3#20): acts of 3, 7, 23, 3, 5 and 5s (the last is the CTA).
 - **Even cut grid:** one cut every 2s (3#34).
 - **Her changelog (2#22):** 37% of the runtime (52s) went on six small fixes, and full-screen proof covered only about 8s of 140s. Budget by chapter.
 
@@ -168,9 +168,7 @@ Slow opens only work when the post copy carries the hook.
 - **Depth as hierarchy:** keywords placed behind the speaker (3#10, 3#11), rack focus (3#24), blurred chips behind a headline (3#13). In code this is z-order, blur and slow parallax.
 - **Speed:** directional motion blur on fast moves (3#11, 3#12, 3#23); a whip scroll with blur (1#3).
 - **Bookends:** close by redrawing the first frame, so autoplay loops seamlessly: the horizon (1#19), the vertical ad (2#4). Or bring the opening motif back around the logo: an orbit returning with the X inside (5#19).
-- **Avoid:**
-  - blur dissolves held too long, which leave dead frames (1#18);
-  - full-desktop or unzoomed captures, which measure 11 to 26% moving (6#15, 6#23).
+- **Avoid** full-desktop or unzoomed captures, which measure 11 to 26% moving (6#15, 6#23).
 - **Motion QA rubric,** from Emil Kowalski's `/review-animations` output (3#17):
   - ease-out on enter, about 200ms in and 150ms out for UI;
   - scale from 0.95, never from 0;
@@ -278,7 +276,21 @@ On the supermemory surface, AI footage is out unless she asks; the brand film (`
 
 ## 11. Endings and CTAs
 
-Batches 4, 5 and 6 (76 videos). Batches 1 to 3 are being added.
+All six batches.
+
+| Ending type | Batch 1 (24) | Batch 2 (24) | Batch 3 (34) |
+|---|---|---|---|
+| URL, command or CTA on the last card | 6 | 10 | 8 (4 CTAs, 4 logo cards with a URL) |
+| Logo or name without a URL | 7 | 9 | 5 |
+| A takeaway card or designed close instead of a logo | 4 | 0 | 3 |
+| Loop back to frame 0 | in "no card" | 2 | 4 |
+| No card, or a spoken sign-off | 7 | 5 | 14 (almost all raw recordings) |
+
+- **Code-made launch films** (batch 3): all 8 end on the brand mark, but only 3 give a URL or install path (3#13, 3#18, 3#34). 3#34 shows the curl install command just before its card.
+
+- **Only one of batch 1's top six ends on a URL** (Zaro, 1#2). Three of the six end with no card at all.
+- **On supermemory's films:** only 3 of the 8 in batch 2 end on a URL or command (2#17, 2#21, 2#22).
+- **Final holds:** most run 1.5 to 4s (batch 2 median about 2s). Some are too short to read: about 0.5s (1#10) and 0.8s (1#3).
 
 - **Hold time:** the norm is a 3 to 5s hold on the CTA or the lockup. Holds run from about 1.6s to 10s (5#16); 5#22 holds 7.5s and 5#4 about 7s.
 - **Logo-only lockups** held 2.5 to 4.5s are the most common, often after an availability line ("Available now", "Research Preview", "macOS & Windows (Beta)") (5#3, 5#5, 5#6, 5#18, 5#23).
