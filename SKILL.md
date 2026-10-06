@@ -30,7 +30,7 @@ Everything here traces to her supermemory video pack, the code-motion-graphics s
 | Music, SFX, voiceover timing | pack `skills/sound-design` | stems + -16 LUFS master |
 | Any words: captions, statements, the tweet | pack `skills/voice-and-copy`, then her voice rules (section 2) | lowercase thesis register |
 | A video that is not about supermemory, or a HyperFrames, Remotion or plain-page build | `references/code/workflow.md` (the code-motion-graphics skill, folded in) | its own workflow |
-| Ideas, references, "make it like this", a prompt for another tool | `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
+| Ideas, references, "make it like this", a prompt for another tool | `references/library/websites.md` (sites by use), `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
 | "update", "fix", "make it better" on an existing cut | find its `reports/videos/<name>-src/README.md`; patch, do not rebuild | same file name + version |
 
 Do not blend registers. Presenter edits do not get explainer motion rules. Reels keep the pack's pop-and-hold grammar.
@@ -222,6 +222,7 @@ Commands and targets: `references/qa.md`.
 | `references/lessons.md` | before any new video: her feedback log, rules that hold today, pipeline fixes, truth rules, rejected ideas |
 | `references/library/bookmarks.md` | mining her X bookmarks for reels, tools, prompts, transitions and design galleries |
 | `references/library/shared-links.md` | every video and design link she sent, with what she said about it |
+| `references/library/websites.md` | every design, motion, gallery, component-kit, 3D, AI-video and brand website from her bookmarks and links (113 sites, clickable, by use) |
 | `references/code/workflow.md` (+ `setup.md`, `frameworks.md`, `prompting.md`, `gallery-lessons.md`, `qa.md`) | a non-supermemory video, or a HyperFrames, Remotion or plain-page build |
 | `engine/README.md`, `engine/console-film/README.md` | starting a render from one of the two reference engines |
 

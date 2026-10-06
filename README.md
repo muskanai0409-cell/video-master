@@ -23,6 +23,7 @@ Keep the folder name. Claude loads the skill when a request matches its descript
 | `references/lessons.md` | Her feedback log, dated and quoted, plus the rule each note became. Craft rules that hold today, pipeline fixes, truth and fact-check rules, rejected ideas, open items |
 | `references/library/bookmarks.md` | 174 motion, video and design picks from her 604 X bookmarks (2026-06-05 to 2026-10-04), by theme, each with what to take, plus an index of every tool and gallery they link |
 | `references/library/shared-links.md` | 91 links she sent in her own messages, with what she said about each, grouped by theme |
+| `references/library/websites.md` | 113 design, motion, gallery, component-kit, 3D, AI-video and brand websites from her bookmarks and links, each a clickable link with what it is, what to use it for and the post it came from |
 | `references/inspiration.md` | Curated design resources and the motion references her direction comes from, and how to study a reference |
 | `references/story.md` | The problem-first story template for 16:9 explainers and square social cuts, with a worked example |
 | `references/motion-grammar.md` | The morph catalogue (flood and shrink, state morphs, a line that breaks and heals, streams into counters, map unfolds, mask-line text, camera push and pull, cursor-driven change), timing, springs, motion blur, seam table, banned list |
