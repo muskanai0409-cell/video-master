@@ -1,6 +1,6 @@
 ---
 name: video-master
-description: "Muskan's master skill for every video and motion-graphics job: making, planning, storyboarding, scripting, rendering or patching an explainer, launch reel, promo, product or console film, data or benchmark film, social cut, logo reveal or kinetic-type piece, for supermemory or anything else. Use it first whenever she asks for a video, an animation, a reel, a teaser, a cutdown, a motion-graphics prompt, or references 'like this video'. Holds her current direction and every piece of feedback so far (lessons log), the morph catalogue, the story template, the Swift render pipeline on her Mac with two reference engines, QA, brand surfaces, a reusable prompt, the general code-motion-graphics workflow (HyperFrames, Remotion, plain pages), and a library of every motion-graphics bookmark and link she has shared, and recipes per format (launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage, memory scenes) learned from a frame-by-frame study of 156 videos in her bookmarks."
+description: "Muskan's master skill for every video and motion-graphics job: making, planning, storyboarding, scripting, rendering or patching an explainer, launch reel, promo, product or console film, data or benchmark film, social cut, logo reveal or kinetic-type piece, for supermemory or anything else. Use it first whenever she asks for a video, an animation, a reel, a teaser, a cutdown, a motion-graphics prompt, or references 'like this video'. Holds her current direction and every piece of feedback so far (lessons log), the morph catalogue, the story template, the Swift render pipeline on her Mac with two reference engines, QA, brand surfaces, a reusable prompt, the general code-motion-graphics workflow (HyperFrames, Remotion, plain pages), and a library of every motion-graphics bookmark and link she has shared, and recipes per format (launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage, memory scenes) learned from a frame-by-frame study of all 304 videos in her bookmarks."
 ---
 
 # video master
@@ -12,7 +12,7 @@ This is the front door for every video job Muskan Jain (GTM, supermemory) asks f
 3. holds the parts no other skill has: the morph catalogue, the story template, the render pipeline that works on this Mac, and QA commands that run without numpy
 4. keeps her taste on file: a lessons log of every note she gave (`references/lessons.md`) and a library of every motion-graphics bookmark and link she shared (`references/library/`)
 
-Everything here traces to her supermemory video pack, the code-motion-graphics skill (folded in under `references/code/`), her memory notes and the READMEs of every film made with her (2026-09-12 to 2026-10-06), 174 motion and design picks from her 604 X bookmarks, 91 links she sent in her own messages, the supermemory.ai site, and a frame-by-frame study of 156 videos from her bookmarks (`references/video-study.md`, 2026-10-06).
+Everything here traces to her supermemory video pack, the code-motion-graphics skill (folded in under `references/code/`), her memory notes and the READMEs of every film made with her (2026-09-12 to 2026-10-06), 174 motion and design picks from her 604 X bookmarks, 91 links she sent in her own messages, the supermemory.ai site, and a frame-by-frame study of all 304 videos in her bookmarks (`references/video-study.md`, 2026-10-06 and 07).
 
 ---
 
@@ -31,7 +31,7 @@ Everything here traces to her supermemory video pack, the code-motion-graphics s
 | Any words: captions, statements, the tweet | pack `skills/voice-and-copy`, then her voice rules (section 2) | lowercase thesis register |
 | A video that is not about supermemory, or a HyperFrames, Remotion or plain-page build | `references/code/workflow.md` (the code-motion-graphics skill, folded in) | its own workflow |
 | Any new video, once the format is clear: launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage | `references/recipes/<format>.md` for measured targets, a beat template, hooks, endings and the posts to study; `references/recipes/memory-scenes.md` for showing memory on screen | the recipe's targets, overridden by section 1 where they differ |
-| Ideas, references, "make it like this", a prompt for another tool | `references/video-study.md` (what 156 bookmarked videos do, measured), `references/library/videos/README.md` (every video with its link and numbers), `references/library/websites.md` (sites by use), `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
+| Ideas, references, "make it like this", a prompt for another tool | `references/video-study.md` (what 304 bookmarked videos do, measured), `references/library/videos/README.md` (every video with its link and numbers), `references/library/websites.md` (sites by use), `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
 | "update", "fix", "make it better" on an existing cut | find its `reports/videos/<name>-src/README.md`; patch, do not rebuild | same file name + version |
 
 Do not blend registers. Presenter edits do not get explainer motion rules. Reels keep the pack's pop-and-hold grammar.
@@ -224,9 +224,9 @@ Commands and targets: `references/qa.md`.
 | `references/library/bookmarks.md` | mining her X bookmarks for reels, tools, prompts, transitions and design galleries |
 | `references/library/shared-links.md` | every video and design link she sent, with what she said about it |
 | `references/library/websites.md` | every design, motion, gallery, component-kit, 3D, AI-video and brand website from her bookmarks and links (113 sites, clickable, by use) |
-| `references/video-study.md` | choosing a format and its targets; hooks, structures, motion, type, endings and memory devices measured across 156 bookmarked videos |
+| `references/video-study.md` | choosing a format and its targets; hooks, structures, motion, type, endings and memory devices measured across 304 bookmarked videos |
 | `references/recipes/` (9 recipes + README) | building a specific format: targets, beat template, hooks, moves, ending, posts to study, pitfalls |
-| `references/library/videos/` | the per-video notes (hook, beats, ending, look, measured numbers, why it works, what to borrow) and an index of all 163 posts |
+| `references/library/videos/` | the per-video notes (hook, beats, ending, look, measured numbers, why it works, what to borrow) in 12 batch files and an index of all 319 video files |
 | `references/code/workflow.md` (+ `setup.md`, `frameworks.md`, `prompting.md`, `gallery-lessons.md`, `qa.md`) | a non-supermemory video, or a HyperFrames, Remotion or plain-page build |
 | `engine/README.md`, `engine/console-film/README.md` | starting a render from one of the two reference engines |
 

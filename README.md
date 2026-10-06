@@ -24,9 +24,9 @@ Keep the folder name. Claude loads the skill when a request matches its descript
 | `references/library/bookmarks.md` | 174 motion, video and design picks from her 604 X bookmarks (2026-06-05 to 2026-10-04), by theme, each with what to take, plus an index of every tool and gallery they link |
 | `references/library/shared-links.md` | 91 links she sent in her own messages, with what she said about each, grouped by theme |
 | `references/library/websites.md` | 113 design, motion, gallery, component-kit, 3D, AI-video and brand websites from her bookmarks and links, each a clickable link with what it is, what to use it for and the post it came from |
-| `references/video-study.md` | A frame-by-frame study of 156 videos from her bookmarks (2026-10-06): measured benchmarks per format and per view tier, hooks, structures with timings, motion, type, UI, AI footage, sound, endings, and what to take for supermemory |
+| `references/video-study.md` | A frame-by-frame study of all 304 videos in her bookmarks (2026-10-06 and 07): measured benchmarks per format and per view tier, hooks, structures with timings, motion, type, UI, AI footage, sound, endings, and what to take for supermemory |
 | `references/recipes/` | One build recipe per format (launch film, product demo, UI-morph reel, explainer, changelog update, ad, talking head, AI footage, memory scenes): targets, beat template, hooks, moves, ending, posts to study, pitfalls |
-| `references/library/videos/` | The per-video notes for all 163 posts (six batch files) and an index with each post's link and measured numbers. The videos themselves are not stored |
+| `references/library/videos/` | The per-video notes for every video bookmark (319 files in 12 batch files) and an index with each post's link and measured numbers. The videos themselves are not stored |
 | `references/inspiration.md` | Curated design resources and the motion references her direction comes from, and how to study a reference |
 | `references/story.md` | The problem-first story template for 16:9 explainers and square social cuts, with a worked example |
 | `references/motion-grammar.md` | The morph catalogue (flood and shrink, state morphs, a line that breaks and heals, streams into counters, map unfolds, mask-line text, camera push and pull, cursor-driven change), timing, springs, motion blur, seam table, banned list |
@@ -46,7 +46,7 @@ Keep the folder name. Claude loads the skill when a request matches its descript
 - **Every film made with her** and its README: version history, her notes per version, measured QA. The films are mcp-upload, memory-graph, one-memory, one-command, recall-strip, namespaces and smfs.
 - **Her X bookmarks:** all 604 were read and the video, motion and design ones were kept. Posts are credited by handle and link. Text is paraphrased, and quotes are kept short.
 - **Every link she sent in her own messages** to Claude Code, from 2026-09-05 onward. Among them are the three design-reference lists she sent on 2026-10-06: @devjuninho (8 sites), @noahelhadedy (11 sites) and @MaybeFlorent (an interactive-sections showreel).
-- **The video study (2026-10-06):** every video in the kept bookmarks was downloaded for study only (never stored here), measured with the same motion metric as her cuts, and read frame by frame by six study passes. Their notes are in `references/library/videos/`, the synthesis in `references/video-study.md`, the build steps in `references/recipes/`.
+- **The video study (2026-10-06 and 07):** every video in her bookmarks was downloaded for study only (never stored here), measured with the same motion metric as her cuts, and read frame by frame by six study passes. Their notes are in `references/library/videos/`, the synthesis in `references/video-study.md`, the build steps in `references/recipes/`.
 - **Earlier research:** Hamza Khalid's setup guide, the 64-post revid.ai "Claude motion graphics" gallery, and the open kits and repos credited in `references/code/`.
 
 ## It installs nothing by itself
