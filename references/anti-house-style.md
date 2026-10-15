@@ -143,6 +143,18 @@ Write it in the film's README before the first still. Each dimension below has i
 | 9 | Uneven density: about 55 to 75% moving overall, with 2 or more deliberate holds of 0.8 to 1.5s | SKILL §1(d): 60%+ moving, no still over about 1s |
 | 21 | Offer a human read for flagship films | #93: she chose Kokoro Bella for the console series |
 
+## 4b. The balance rules: not generic, and still clear and branded
+
+**Why these exist:** in the Oct 16 blind test, the anti-house-style plan cut "Claude-made" from 8 to 2 and lifted memorability from 5 to 8. It also lost clarity (9 to 6) and branding (9 to 6 or 7). Avoiding the tells must never cost these. Full record: `research/motion-mastery/blind-test-2026-10-16.md`.
+
+| # | Rule | Check |
+|---|---|---|
+| B1 | **The idea is clear on a muted phone.** By about 5s a viewer knows who and what (who is speaking, when, what changed). If the anchor hides that, label it inside the world: a stamped "you" or "agent", a dated sheet, a timestamp | Watch the 390px contact sheet with no sound: write what it says. It must match the brief's one idea by 40% of the runtime |
+| B2 | **The brand is on screen early.** Frame 0 or the first 3s carries the exact mark or brand blue, even when the full colour is held for the payoff. The blue fills a large part of the frame at least once before the lockup | The frame-0 thumbnail shows the mark or the blue; one frame before the end card is at least 30% blue |
+| B3 | **Anything that must be read stays sharp and phone-sized.** Never pull focus onto, or blur, a line the story depends on. Reading text is at least 13px on a 390px phone (64px or more at 1080) | Contact sheet at 390px wide |
+| B4 | **Dark grounds and soft falloffs get grain or dither** (1 to 2% luma), or X's compression bands them | Encode, re-encode at a social bitrate, and look at the gradients |
+| B5 | **The anchor must read at once.** A prop that carries the metaphor (a projector, a machine) needs a rim light or a silhouette that reads at phone size. If it would need a caption, change the anchor | Show frame 0 to a fresh critic and ask what the object is |
+
 ## 5. Ending devices (rotate them)
 
 | Device | What happens | Used in |

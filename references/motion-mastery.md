@@ -199,7 +199,29 @@ From lane A §3.4, lane B and premium web §2:
 - Saul Bass and Art of the Title (restraint);
 - Immersive Garden, Locomotive, Obys, Lusion, Active Theory, Cuberto and OFF+BRAND (premium web).
 
-## 8. Still unknown (be honest about these)
+## 8. Proof that it works, and where it over-corrects (blind test, Oct 16)
+
+**The test:** two fresh agents planned the same 20s brief, one with the pre-research skill and one with this one. Two blind critics judged them, with the order swapped.
+
+| Score | Old skill | New skill |
+|---|---|---|
+| Generic | 8 | 2 |
+| Craft | 6 to 7 | 8 |
+| Memorability | 5 | 8 |
+| Branding | 9 | 6 to 7 |
+| Clarity | 9 | 6 |
+
+- **Both critics would post the new one.**
+- **The old skill rebuilt the whole house style** from a free brief: lattice, + grid, mono labels, pops, the hip-hop kit, the mark-to-lockup ending.
+- **Where the new one over-corrected:** clarity and branding. The fix is the balance rules in `anti-house-style.md` §4b:
+  - muted-phone clarity by 5s;
+  - the brand in the first 3s;
+  - nothing to read blurred;
+  - grain on dark grounds;
+  - an anchor that reads at once.
+- **Record:** `research/motion-mastery/blind-test-2026-10-16.md`.
+
+## 9. Still unknown (be honest about these)
 
 - **Nothing in lanes A and B was watched frame by frame.** They are written sources; lane C measured her bookmarks.
 - **Unreachable:**

@@ -10,3 +10,4 @@ These are the full reports behind `../../motion-mastery.md`, the one-page playbo
 | `lane-c-her-library.md` | her own library: 26 premium-versus-cheap principles, 13 template alarms, 163 techniques she saved but never used, the 20 references most "her", gaps |
 | `lane-d-toolbox.md` | what renders on this Mac with no installs: Metal raymarching, SDFs from vectors, anamorphic paint, infinity mirrors, six media, CoreImage, fonts, Apple Loops metadata |
 | `premium-web-motion.md` | premium versus cheap web motion: ascenta's live code, the award studios' signatures, 25 principles, 10 moves as pure functions of time |
+| `blind-test-2026-10-16.md` | the proof: old skill vs new skill planning the same film, judged blind twice. Genericness 8 to 2, memorability 5 to 8, but clarity 9 to 6 and branding 9 to 6 or 7, which led to the balance rules |
