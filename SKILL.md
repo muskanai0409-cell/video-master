@@ -1,6 +1,6 @@
 ---
 name: video-master
-description: "Muskan's master skill for every video and motion-graphics job: making, planning, storyboarding, scripting, rendering or patching an explainer, launch reel, promo, product or console film, data or benchmark film, social cut, logo reveal or kinetic-type piece, for supermemory or anything else. Use it first whenever she asks for a video, an animation, a reel, a teaser, a cutdown, a motion-graphics prompt, or references 'like this video'. Holds her current direction and every piece of feedback so far (lessons log), the morph catalogue, the story template, the Swift render pipeline on her Mac with six engines (explainer, console film, brand-book dot field with the glass mind, memory board, morph chain, voiceover-keyed film), motion-systems and voiceover guides, design tells for still graphics, QA, brand surfaces, a reusable prompt, the general code-motion-graphics workflow (HyperFrames, Remotion, plain pages), and a library of every motion-graphics bookmark and link she has shared, and recipes per format (launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage, memory scenes) learned from a frame-by-frame study of all 304 videos in her bookmarks."
+description: "Muskan's master skill for every video and motion-graphics job: making, planning, storyboarding, scripting, rendering or patching an explainer, launch reel, promo, product or console film, data or benchmark film, social cut, logo reveal or kinetic-type piece, for supermemory or anything else. Use it first whenever she asks for a video, an animation, a reel, a teaser, a cutdown, a motion-graphics prompt, or references 'like this video'. Holds her current direction and every piece of feedback so far (lessons log), the morph catalogue, the story template, the Swift render pipeline on her Mac with eight engines (explainer, console film, brand-book dot field with the glass mind, memory board, morph chain, voiceover-keyed film, a Metal GPU harness, and the media reel: one raymarched 3D scene rendered as light, engraving, type, survey drawing, risograph or an infinity mirror room, ending in an anamorphic lockup), the anti-house-style rules (a style card per film checked against a style log, so no two films share a look, with the brand held constant), motion-systems and voiceover guides, design tells for still graphics, QA, brand surfaces, a reusable prompt, the general code-motion-graphics workflow (HyperFrames, Remotion, plain pages), and a library of every motion-graphics bookmark and link she has shared, and recipes per format (launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage, memory scenes) learned from a frame-by-frame study of all 304 videos in her bookmarks."
 ---
 
 # video master
@@ -33,6 +33,7 @@ Everything here traces to her supermemory video pack, the code-motion-graphics s
 | Any new video, once the format is clear: launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage | `references/recipes/<format>.md` for measured targets, a beat template, hooks, endings and the posts to study; `references/recipes/memory-scenes.md` for showing memory on screen | the recipe's targets, overridden by section 1 where they differ |
 | Ideas, references, "make it like this", a prompt for another tool | `references/video-study.md` (what 304 bookmarked videos do, measured), `references/library/videos/README.md` (every video with its link and numbers), `references/library/websites.md` (sites by use), `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
 | "update", "fix", "make it better" on an existing cut | find its `reports/videos/<name>-src/README.md`; patch, do not rebuild | same file name + version |
+| **Any new film, before choosing its look** | `references/anti-house-style.md`: write the style card (9 fields), check it against `references/style-log.md`, pick from the style deck; then add the film's row to the log | a look no recent film used, brand held constant |
 | A brand or teaser film on the blue field (dot lattice, a subject recalled out of it, tokens), a head or brain as the subject, a board of facts that change (expire, update, forget), or real-sounding music with no budget | `references/motion-systems.md`, with the ready engines `engine/brand-lattice/` (dot field + glass mind + Apple Loops score) and `engine/memory-board/` (reflowing board + morphing bar + history row) | 16:9, 60fps, 4K master + 1080 cut, about 18 to 25s |
 | A short launch film where one thing becomes the next ("one thing blended into other"), ending on the mark | `references/motion-systems.md` §5, engine `engine/morph-chain/` | 16:9, 20s or less |
 | A film with a spoken voiceover (an explainer, a console walkthrough) | `references/voiceover.md` (Kokoro af_bella, word-locked timing, ducking), engine `engine/voiceover-film/` | 45 to 60s for X and LinkedIn, then a long YouTube cut |
@@ -51,6 +52,12 @@ Read the pack's `SKILL.md`, `reference/feedback-rules.md` and `reference/brand-s
 ---
 
 ## 1. Her current direction (overrides older pack rules)
+
+**(0) 2026-10-15: no house style; keep the brand.** Her words: "people can easily understand that you are making videos with opus 5.5 ... there's a watermark in every video that you make ... i dont want you to be generic at all", then "dont lose the supermemory branding in learning new stuff". So:
+- every new film starts with a style card (`references/anti-house-style.md` §2) checked against `references/style-log.md`: at most 2 of 9 fields may match any of the last three films;
+- the explainer look below ((b), (c), the HUD, the mask-rise statements, the blue lattice, the spring family, the mark-pop ending, the 160 BPM kits) is now **one option, not the default**; use it when a brief calls for an explainer in that frame;
+- 3D, real light, shadows, haze, reflections and a soft bloom are allowed when they are physical and crafted (the media reel, `engine/media-reel/`); glows on the mark, outlines on the mark, rainbow gradients and decorative particles stay banned;
+- the brand never varies: the exact mark (vector-derived, never retraced), brand blue as the one hero colour, lowercase supermemory in Geist, the official horizontal lockup at the end in an official colourway (§4 of anti-house-style.md).
 
 As of 2026-10-06 these points are what she wants. The pack was built from cuts shipped between 2026-09-12 and 2026-10-01, mostly silent square explainers. **Where an older pack rule conflicts with the points below, these win. The current brief beats both.** Say in the delivery note which older rule you overrode.
 
@@ -119,7 +126,7 @@ From the pack (`reference/feedback-rules.md`) and her memory notes. These hold f
 - Never two captions or statements on one frame. Each holds at least 2.5s (a brief may set a lower floor). Never before the thing it describes.
 - Frame 0 is the thumbnail: fully composed, no fade-in.
 - One accent, `#0562ef`, used only for the thing being proved. Blue first appears at the turn and is only ever added, never removed. No colour tweens.
-- No gradients, glow, particles, 3D, shadows, whooshes, white flashes, stock wipes.
+- No decorative gradients, glow on the mark, particles for their own sake, whooshes, white flashes, stock wipes. Real 3D light, shadows, haze and reflections are allowed when a style card calls for them (§1 (0), 2026-10-15).
 - End on the thesis, then the official horizontal lockup, then a still hold of 1.2 to 2s whose decoded frames are identical.
 - Readable at 390px wide.
 - Encode tagged bt709 and check the decoded hex against the tokens.
@@ -187,6 +194,8 @@ Product films render a 3840x2160 master (`SCALE=2`) and a lanczos 1080p cut, and
 
 Commands, the zone finding, motion blur, footage, audio, folder layout and the engine section: `references/pipelines.md`. Two reference engines: `engine/reference-16x9.swift` (explainers, the mcp-upload film) and `engine/console-film/` (vector console, terminal, beat grid, synth score, brand-film background). Her pack's Python renderers and HyperFrames or Remotion need installs; ask first.
 
+**Real 3D and GPU (2026-10-15).** Metal compiles `.metal` source at run time, so raymarched signed-distance scenes render here with nothing installed: about 0.2s a 1080p frame with soft shadows, AO, a glossy floor and haze on the M5. `engine/gpu/` is the one-shader harness; `engine/media-reel/` is the full film engine (one scene, many media, CoreImage post, CoreText type, light-sweep handovers, anamorphic paint, a log-space pull-back with speed-driven motion blur). The mark's exact 3D field comes from its vector path (`markfield.swift`). Toolbox notes: `~/personal-supermemory/research_notes/Motion mastery/lane-d-toolbox.md`.
+
 ---
 
 ## 7. QA gates (short)
@@ -234,6 +243,10 @@ Commands and targets: `references/qa.md`.
 | `references/library/videos/` | the per-video notes (hook, beats, ending, look, measured numbers, why it works, what to borrow) in 12 batch files and an index of all 319 video files |
 | `references/code/workflow.md` (+ `setup.md`, `frameworks.md`, `prompting.md`, `gallery-lessons.md`, `qa.md`) | a non-supermemory video, or a HyperFrames, Remotion or plain-page build |
 | `engine/README.md`, `engine/console-film/README.md` | starting a render from one of the two reference engines |
+| `references/anti-house-style.md` | **before every new film**: my old tells, the style card, the style deck, ending devices, sound rotation, the brand guard |
+| `references/style-log.md` | the looks of recent films; a new card may share at most 2 of 9 fields with any of the last three |
+| `engine/media-reel/README.md`, `engine/gpu/` | real 3D: one raymarched scene drawn as light, engraving, type, survey, riso or mirrors; anamorphic paint; Metal harness |
+| `~/personal-supermemory/research_notes/Motion mastery/` | the Oct 15 research: lane A (AI tells), B (studio craft atlas), C (her library, 163 techniques, premium vs cheap, template alarms), D (the toolbox) |
 
 ---
 

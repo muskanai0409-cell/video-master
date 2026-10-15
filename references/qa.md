@@ -47,8 +47,8 @@ On mcp-upload this gave `f3f3f5` for paper `#f4f4f6` and `fdfdfd` for white `#ff
 
 ```bash
 $FF -v error -i "$V" -vf "fps=30,scale=160:90,format=gray,tblend=all_mode=difference,signalstats,metadata=print:key=lavfi.signalstats.YAVG:file=motion.txt" -f null -
-# % moving and longest still before the end card (set END to the end-card start)
-awk -F= -v thr=0.15 -v fps=30 -v END=20.4 '/YAVG/{n++; t=n/fps; if ($2<thr){run++; if (t<END && run>best) best=run} else {mv++; run=0}} END{printf "moving %.1f%%  longest still before end card %.2fs\n", 100*mv/n, best/fps}' motion.txt
+# % moving and longest still before the end card (set ENDT to the end-card start; BSD awk rejects a variable named END)
+awk -F= -v thr=0.15 -v fps=30 -v ENDT=20.4 '/YAVG/{n++; t=n/fps; if ($2<thr){run++; if (t<ENDT && run>best) best=run} else {mv++; run=0}} END{printf "moving %.1f%%  longest still before end card %.2fs\n", 100*mv/n, best/fps}' motion.txt
 # list every still stretch of 1s or more
 awk -F= -v thr=0.15 -v fps=30 '/YAVG/{n++; if ($2<thr){if(!run) st=n; run++} else {if (run/fps>=1) printf "still %.2f-%.2fs (%.2fs)\n", (st-1)/fps, n/fps, run/fps; run=0}} END{if (run/fps>=1) printf "still %.2f-end (%.2fs)\n", (st-1)/fps, run/fps}' motion.txt
 ```
