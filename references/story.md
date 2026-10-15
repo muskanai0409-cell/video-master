@@ -2,7 +2,7 @@
 
 Her current rule: **explain the problem first.** The viewer should know what is being solved, and feel it, before any mechanism or product appears.
 
-**Sources:** her direction of 2026-10-05; the pack's story rules (`reference/feedback-rules.md` "Story", `skills/voice-and-copy` section 1 on Dhravya's method); the memory-graph v3 lesson that full plain sentences read better for her than short display lines; the shipped mcp-upload explainer (`/Users/muskan/supermemory/reports/videos/mcp-upload-src/README.md`).
+**Sources:** her direction of 2026-10-05; the pack's story rules (`reference/feedback-rules.md` "Story", `skills/voice-and-copy` section 1 on Dhravya's method); the memory-graph v3 lesson that full plain sentences read better for her than short display lines; the shipped mcp-upload explainer (`/Users/muskan/personal-supermemory/reports/videos/mcp-upload-src/README.md`).
 
 ---
 
@@ -35,7 +35,7 @@ On a 120 BPM grid (0.5s beats) this is 72 beats. Every statement holds 2.5s or m
 | 09 | none, or keep `06` | 32.5-35.0 | the thesis, thesis register | everything else clears; the survivor holds and drifts | the survivor |
 | 10 | none | 35.0-37.0 | none | the survivor expands into the lockup; still from about 35.8s | |
 
-Lengths: **25 to 26s max for 16:9 explainers** (her cap, 2026-10-05; the 36.8s v2 was too long). The 36s template above compresses by merging statements, see the mcp-upload v3 beat table in `/Users/muskan/supermemory/reports/videos/mcp-upload-16x9-src/README.md`. Older guidance said 30 to 40s. Her smfs v4 cut (27.5s) and memory-graph v3 (20s) are on the short side; the X benchmark's explainer-length references run 26 to 40s (pack `reference/x-motion-benchmark.md`).
+Lengths: **25 to 26s max for 16:9 explainers** (her cap, 2026-10-05; the 36.8s v2 was too long). The 36s template above compresses by merging statements, see the mcp-upload v3 beat table in `/Users/muskan/personal-supermemory/reports/videos/mcp-upload-16x9-src/README.md`. Older guidance said 30 to 40s. Her smfs v4 cut (27.5s) and memory-graph v3 (20s) are on the short side; the X benchmark's explainer-length references run 26 to 40s (pack `reference/x-motion-benchmark.md`).
 
 **Chapter progress.** The bottom rule has one segment per section label. The active segment fills with time in ink. Blue stays reserved for the proof.
 
@@ -87,4 +87,4 @@ What a 16:9 version would change under the current direction: the statements mov
 - [ ] Does each statement describe something already on screen?
 - [ ] Does the thesis appear exactly once?
 - [ ] Does the tweet say the same thing?
-- [ ] Are there any claim landmines? Check section 1 of `/Users/muskan/supermemory/.claude/reference/dhravya-explainer-research.md`, and never imply weight updates.
+- [ ] Are there any claim landmines? Check section 1 of `/Users/muskan/personal-supermemory/.claude/reference/dhravya-explainer-research.md`, and never imply weight updates.

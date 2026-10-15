@@ -1,11 +1,11 @@
 # QA: what to check, with commands that run on this Mac
 
-No numpy here, so every check below uses the bundled ffmpeg, awk, or the Swift renderer itself. Every command in section 2 was run on 2026-10-05 against `/Users/muskan/supermemory/reports/videos/mcp-upload-explainer.mp4` (and, where noted, its renderer). Results from that run are quoted so you know what normal output looks like.
+No numpy here, so every check below uses the bundled ffmpeg, awk, or the Swift renderer itself. Every command in section 2 was run on 2026-10-05 against `/Users/muskan/personal-supermemory/reports/videos/mcp-upload-explainer.mp4` (and, where noted, its renderer). Results from that run are quoted so you know what normal output looks like.
 
 ```bash
 FF=/Applications/Cardboard.app/Contents/Resources/bin/ffmpeg
 FP=/Applications/Cardboard.app/Contents/Resources/bin/ffprobe
-V=/Users/muskan/supermemory/reports/videos/<name>.mp4
+V=/Users/muskan/personal-supermemory/reports/videos/<name>.mp4
 ```
 
 "A render that exits 0 proves nothing" (claude-animation-skill, via code-motion-graphics). Look at pixels with the Read tool, then measure.

@@ -82,7 +82,7 @@ The 19.6s video (1200x674) is a showreel of those sections playing inside a floa
 | revid "Claude motion graphics" gallery, 64 posts | what each category teaches, with sponsored and non-Claude posts labelled | `~/.claude/skills/code-motion-graphics/references/gallery-lessons.md` |
 | The X motion benchmark, 25 files measured | motion %, longest still, cuts and loudness of the top posts. Her own picks on it: @deedydas "muda" (#6), @LexnLin "tessel" (#19); @darel023 "Timing" (#14) was the motion reference for smfs v4 | the pack's `reference/x-motion-benchmark.md` |
 | Her own bar | she pointed at the smfs v4 cut as the bar for memory-graph v3 | `~/Downloads/smfs_explainer_v4_27s.mp4` |
-| Her recent cuts | memory-graph v3 (16:9, flood into the field film, HUD and progress rule), mcp-upload (stream into a counter, square) | `/Users/muskan/supermemory/reports/videos/` |
+| Her recent cuts | memory-graph v3 (16:9, flood into the field film, HUD and progress rule), mcp-upload (stream into a counter, square) | `/Users/muskan/personal-supermemory/reports/videos/` |
 | whatships.com | a free, independent reference directory that says it sells no placement (recommended, without disclosure, in @rexan_wong's post) | via code-motion-graphics `prompting.md` |
 | 30 YouTube channels | formats, thumbnails, proof design for long-form | the pack's `skills/supermemory-youtube-production` |
 

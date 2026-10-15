@@ -93,11 +93,11 @@ progress   y 1000, x 96-1824, one segment per chapter, 12px gaps, 2px tall
 
 | Asset | Path | Notes |
 |---|---|---|
-| Official lockup masks | `/Users/muskan/supermemory/reports/videos/mcp-upload-src/lock_mark.png` (588x480) and `lock_word.png` (3182x381); same files in `memory-graph-src-v3/` | white-on-black luminance masks; draw in any of the four official colourways |
+| Official lockup masks | `/Users/muskan/personal-supermemory/reports/videos/mcp-upload-src/lock_mark.png` (588x480) and `lock_word.png` (3182x381); same files in `memory-graph-src-v3/` | white-on-black luminance masks; draw in any of the four official colourways |
 | Lockup geometry | mark 588x480, gap 230, wordmark 3182x381, wordmark top 99px below the mark top | from `memory-graph-src-v3/geom.npy`; within about 2% of the proportions of the brand PDF's p.14 lockup measured at 600dpi (mark 1123x912, gap 440, wordmark 6087x726, top 186) |
 | Lockup source | `/Users/muskan/supermemory/apps/web/public/logo-light-fullmark.svg` and `logo-fullmark.svg` | memory-graph used the light fullmark; it matches the PDF geometry |
 | Fonts | `Geist.ttf`, `GeistMono.ttf` in `reports/videos/mcp-upload-src/fonts/` | variable weight |
-| Blue flower-field film | `/Users/muskan/supermemory/reports/videos/memory-graph-src-v3/assets/field.mp4` | the site's `/brand/media/field.mp4`; 1280x720, 25fps, 32s; memory-graph used the 22 to 32s stretch |
+| Blue flower-field film | `/Users/muskan/personal-supermemory/reports/videos/memory-graph-src-v3/assets/field.mp4` | the site's `/brand/media/field.mp4`; 1280x720, 25fps, 32s; memory-graph used the 22 to 32s stretch |
 | Console graph capture | `memory-graph-src-v3/assets/prasanna_graph.mp4` | Prasanna's Sep 19 recording, 2332x1430, 120fps; real UI, so usable; never caption it "live" |
 | Dawn photograph (dusk register) | `https://supermemory.ai/brand/media/cta-dawn.jpg` | she later asked for "a plain white one", so light is the default |
 | Engine copies | `~/.claude/skills/video-master/engine/assets/` | being set up by the main session; see `pipelines.md` section 3 |

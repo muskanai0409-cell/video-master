@@ -18,8 +18,9 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [10-more-d.md](10-more-d.md) | more bookmarks D | 29 |
 | [11-more-e.md](11-more-e.md) | more bookmarks E | 31 |
 | [12-more-f.md](12-more-f.md) | more bookmarks F (long podcasts) | 6 |
+| [13-shared-oct.md](13-shared-oct.md) | videos she sent with "learn this" (Oct 2026), studied in the browser without downloading | 1 |
 
-## Launch film (59) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
+## Launch film (60) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
 
 | Ref | Post | Length | Aspect | Views | Moving | Still | Cuts | LUFS |
 |---|---|---|---|---|---|---|---|---|
@@ -70,6 +71,7 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [3#13](3-code-craft.md) | [@LexnLin](https://x.com/LexnLin/status/2104148233106723099) | 33s | 16:9 | 96K | 83% | 1.0s | 1.8 | -14.2 |
 | [2#1](2-reels-b.md) | [@ZaroAI_](https://x.com/adxtyahq/status/2070138054233518426) (same video as 1#2) | 69s | 16:9 | 92K | 39% | 1.2s | 10.5 | -9.5 |
 | [2#3](2-reels-b.md) | [@tjcages](https://x.com/titouangillet_/status/2098423993652887785) | 55s | 16:9 | 89K | 89% | 4.9s | 4.4 | -8.7 |
+| [13#1](13-shared-oct.md) | [@workersio](https://x.com/workersio/status/2107923334134710653) | 45s | 16:9 | 60.6K | 72% | 0.9s | 0.0 | n/a |
 | [3#18](3-code-craft.md) | [@gregpr07](https://x.com/gregpr07/status/2102984873351037161) | 18s | 16:9 | 58K | 89% | 0.7s | 13.3 | -14.9 |
 | [2#9](2-reels-b.md) | [@DhravyaShah](https://x.com/DhravyaShah/status/2021288232688943393) | 49s | 16:9 | 37K | 82% | 0.7s | 15.8 | -11.6 |
 | [3#25](3-code-craft.md) | [@claudeai](https://x.com/Miguel07Code/status/2105453292008661458) | 13s | 16:9 | 30K | 81% | 0.1s | 36.0 | -23.1 |

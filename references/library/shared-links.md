@@ -3,7 +3,7 @@
 Built 2026-10-06 for the video-master skill. These are the links she sent to Claude that matter for videos, motion graphics, design references, brand visuals, tools, prompts and sound. Product docs, growth analytics and research sources are left out. Borderline links are in table G.
 
 **Sources**
-- `/Users/muskan/supermemory/.claude/reference/muskan-links-index.md`: 293 URLs she sent in Claude Code up to 2026-10-05 12:18 UTC. Its descriptions are reused where they checked out (corrections below).
+- `/Users/muskan/personal-supermemory/.claude/reference/muskan-links-index.md`: 293 URLs she sent in Claude Code up to 2026-10-05 12:18 UTC. Its descriptions are reused where they checked out (corrections below).
 - A fresh read-only scan of all 32 main transcripts in `~/.claude/projects/` using the index's rules. It counts only her own messages, prompts she queued mid-turn and slash-command args. It skips tool results, system reminders, hook output, task notifications and subagent transcripts. The scan ran up to 2026-10-06 11:23 UTC. It found 6 new links after the index and 7 older links the index missed.
 - Her Hyperagent video pack `~/Downloads/supermemory-video-skills.zip`. Briefs 84 and 97 carry links she gave outside Claude Code. Their exact dates were not recorded, but the files are dated 2026-10-01.
 - What the links contain was checked on 2026-10-06:
@@ -57,6 +57,11 @@ Built 2026-10-06 for the video-master skill. These are the links she sent to Cla
 ## 1. Instructions she gave with links
 
 Newest first. Dates and times are UTC.
+
+- **2026-10-10**, with the @workersio launch film (`x.com/workersio/status/2107923334134710653`): "learn this video:". Studied in the browser without downloading, then filed:
+  - the full note: `videos/13-shared-oct.md` #1;
+  - a lesson: `lessons.md` #73;
+  - its moves: `recipes/launch-film.md`.
 
 - **2026-10-06 11:23**, with the @noahelhadedy post: "this too:"
 - **2026-10-06 11:16**, with the @MaybeFlorent post, in the namespaces-v5 session: "see this" and "add stuff from here as well". It is unclear whether she meant the film or the skill.

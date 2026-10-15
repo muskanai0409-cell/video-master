@@ -74,6 +74,8 @@ Craft does not predict views: see `video-study.md` section 2. Announcements from
 
 ## Moves that make it
 
+- **Bookend survivor (from @workersio):** the first frame is one simple object (a square, a dot); it stands for the system all film and morphs into the logo mark at the end. Pair it with an exploding counter in the first 2.5s ("2 → 256 → 2,097,152") so the scale of the problem lands before any statement.
+
 - **Motion by camera, cursor and morph, not cuts.** The top launch films keep about 75% moving with few cuts. Save 0.1 to 0.5s flash cuts for one burst right before the reveal (5#7, 5#16).
 - **Make the metaphor the structure.** Every UI beat is a behaviour of one human analogy. 5#1's "AI employee" joins Slack, reads everything, sat in every meeting and never sleeps.
 - **Chaos to one window:** N windows cascade, then collapse into the product's single window (5#4).
@@ -94,6 +96,8 @@ Craft does not predict views: see `video-study.md` section 2. Announcements from
 - **Don't end on the logo alone when there is something to do.** The supermemory MCP launch (2#10) ends on its logo although the post carries a docs link. Only 3 of the 8 supermemory films in batch 2 end on a URL or command.
 
 ## Study these first
+
+- **@workersio (Oct 10, she sent it: "learn this video")**, `library/videos/13-shared-oct.md` #1. 45s, one continuous take with zero cuts, white ground, one orange accent. The survivor square becomes the logo, the counter explodes in the hook, the headlines are typed tricolons, and the wall tilts into a 3D plane for scale.
 
 | Ref | Post | Why |
 |---|---|---|

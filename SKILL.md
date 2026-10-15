@@ -33,6 +33,7 @@ Everything here traces to her supermemory video pack, the code-motion-graphics s
 | Any new video, once the format is clear: launch film, product demo, UI-morph reel, explainer, changelog, ad, talking head, AI footage | `references/recipes/<format>.md` for measured targets, a beat template, hooks, endings and the posts to study; `references/recipes/memory-scenes.md` for showing memory on screen | the recipe's targets, overridden by section 1 where they differ |
 | Ideas, references, "make it like this", a prompt for another tool | `references/video-study.md` (what 304 bookmarked videos do, measured), `references/library/videos/README.md` (every video with its link and numbers), `references/library/websites.md` (sites by use), `references/library/bookmarks.md`, `references/library/shared-links.md`, `references/inspiration.md`, `references/code/gallery-lessons.md` | a short list of mechanisms to borrow |
 | "update", "fix", "make it better" on an existing cut | find its `reports/videos/<name>-src/README.md`; patch, do not rebuild | same file name + version |
+| A brand or teaser film on the blue field (dot lattice, a subject recalled out of it, tokens), a head or brain as the subject, a board of facts that change (expire, update, forget), or real-sounding music with no budget | `references/motion-systems.md`, with the ready engines `engine/brand-lattice/` (dot field + glass mind + Apple Loops score) and `engine/memory-board/` (reflowing board + morphing bar + history row) | 16:9, 60fps, 4K master + 1080 cut, about 18 to 25s |
 
 Do not blend registers. Presenter edits do not get explainer motion rules. Reels keep the pack's pop-and-hold grammar.
 
@@ -102,7 +103,7 @@ From the pack (`reference/feedback-rules.md`) and her memory notes. These hold f
 - Never fabricate product UI. Product shots come from a real capture of the live product. Abstract scopes and diagrams are fine when they are clearly not UI.
 - No weight-update claims. Memory is injected into the model's context. Never "trains on", "learns into the model", "changes the weights", "learns overnight".
 - Benchmark claims carry their conditions on screen, readable, for about 3s.
-- Claim landmines (the "97%" LongMemEval figure is likely a retrieval score; scale numbers differ by source; v5 field names are unannounced; Company Brain and Nova are discontinued): read section 1 of `/Users/muskan/supermemory/.claude/reference/dhravya-explainer-research.md` before writing any claim.
+- Claim landmines (the "97%" LongMemEval figure is likely a retrieval score; scale numbers differ by source; v5 field names are unannounced; Company Brain and Nova are discontinued): read section 1 of `/Users/muskan/personal-supermemory/.claude/reference/dhravya-explainer-research.md` before writing any claim.
 
 **Copy**
 - "supermemory", "supermemory.ai" and "smfs" are lowercase, even inside an uppercase label row.
@@ -202,7 +203,7 @@ Commands and targets: `references/qa.md`.
 
 ## 8. Delivery
 
-- MP4 to `/Users/muskan/supermemory/reports/videos/<name>.mp4`. Source to `reports/videos/<name>-src/` with a README that holds the rebuild commands, the beat table, every claim with its source, the measured QA and the deliberate deviations. Her existing examples: `mcp-upload-src/`, `memory-graph-src-v3/`.
+- MP4 to `/Users/muskan/personal-supermemory/reports/videos/<name>.mp4`. Source to `reports/videos/<name>-src/` with a README that holds the rebuild commands, the beat table, every claim with its source, the measured QA and the deliberate deviations. Her existing examples: `mcp-upload-src/`, `memory-graph-src-v3/`.
 - Export the busiest frame as a PNG.
 - The delivery note says: what changed and why, every deviation with its arithmetic, what was measured, what you looked at, what nobody has listened to, and what still needs her eyes.
 - Never post it anywhere. The file is the deliverable.

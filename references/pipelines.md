@@ -9,7 +9,7 @@
 | bundled ffmpeg 6.0 + ffprobe | `/Applications/Cardboard.app/Contents/Resources/bin/ffmpeg` and `.../ffprobe`. Built with libx264 and libx265. Filters present: `tmix`, `tblend`, `signalstats`, `ebur128`, `drawtext`, `tile`. Muxers present: `framemd5`, `md5` |
 | Swift | `/usr/bin/swiftc`, Apple Swift 6.3.3 |
 | Node | v22.19.0 at `~/.local/node/bin/node` (HyperFrames needs 22+) |
-| Geist fonts | `Geist.ttf` and `GeistMono.ttf` in `/Users/muskan/supermemory/reports/videos/mcp-upload-src/fonts/` (also in the other `*-src/fonts/` folders and `reports/video-scripts/diagrams/source/lib/`) |
+| Geist fonts | `Geist.ttf` and `GeistMono.ttf` in `/Users/muskan/personal-supermemory/reports/videos/mcp-upload-src/fonts/` (also in the other `*-src/fonts/` folders and `reports/video-scripts/diagrams/source/lib/`) |
 
 The ffmpeg path depends on the Cardboard app staying installed. If `"$FF" -version` fails, stop and tell her. Do not install ffmpeg without asking.
 
@@ -24,7 +24,7 @@ FP=/Applications/Cardboard.app/Contents/Resources/bin/ffprobe
 
 ## 2. The working pipeline: Swift frames into the bundled ffmpeg
 
-First shipped with the mcp-upload explainer (2026-10-05). Source and README: `/Users/muskan/supermemory/reports/videos/mcp-upload-src/`.
+First shipped with the mcp-upload explainer (2026-10-05). Source and README: `/Users/muskan/personal-supermemory/reports/videos/mcp-upload-src/`.
 
 ```
 render.swift (pure render(ctx, t))
@@ -93,8 +93,8 @@ $FF -y -i picture.mp4 -i mix.wav -map 0:v -map 1:a -c:v copy -af apad -c:a aac -
 **Folder convention** (match her existing cuts):
 
 ```
-/Users/muskan/supermemory/reports/videos/<name>.mp4
-/Users/muskan/supermemory/reports/videos/<name>-src/
+/Users/muskan/personal-supermemory/reports/videos/<name>.mp4
+/Users/muskan/personal-supermemory/reports/videos/<name>-src/
   render.swift   render (binary)   fonts/   lock_mark.png   lock_word.png   assets/
   stills/        qa/
   README.md      rebuild commands, beat table, every claim with its source, measured QA, deliberate deviations
