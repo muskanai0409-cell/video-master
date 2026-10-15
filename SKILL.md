@@ -246,6 +246,7 @@ Commands and targets: `references/qa.md`.
 | `engine/README.md`, `engine/console-film/README.md` | starting a render from one of the two reference engines |
 | `references/anti-house-style.md` | **before every new film**: my old tells, the style card, the style deck, ending devices, sound rotation, the brand guard |
 | `references/style-log.md` | the looks of recent films; a new card may share at most 2 of 9 fields with any of the last three |
+| `references/premium-motion.md` | how expensive motion behaves (luxury web and studio sites, ascenta's live code): curves and timings by role, masks not fades, inertia, parallax, no bounce, the finishing pass, 10 moves as Swift functions of time |
 | `engine/media-reel/README.md`, `engine/gpu/` | real 3D: one raymarched scene drawn as light, engraving, type, survey, riso or mirrors; anamorphic paint; Metal harness |
 | `~/personal-supermemory/research_notes/Motion mastery/` | the Oct 15 research: lane A (AI tells), B (studio craft atlas), C (her library, 163 techniques, premium vs cheap, template alarms), D (the toolbox) |
 
