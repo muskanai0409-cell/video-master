@@ -133,7 +133,7 @@ Write it in the film's README before the first still. Each dimension below has i
 | 24 | **Hero imagery is a brand asset**, real footage or photography, or drawn to a named style reference. 6 generic icons at most |
 | 25 | **No closing line reused in consecutive films.** Vary the register: one word, a question, one sentence, or none |
 
-**Pending her call:** these cut against things she asked for before. Until she decides, her earlier asks win.
+**Options, not defaults:** these cut against things she asked for before. Asked on Oct 15, she said "dont do anything to the video it's not needed, i just wanted you to learn better skills", with no preference on the rules. So her earlier asks stay the baseline (lots of movement, one thing blending into the next). A style card may pick any of these when the film's language calls for it, and must say so in the README.
 
 | # | Proposed rule | Her earlier ask |
 |---|---|---|
