@@ -59,22 +59,24 @@ Read the pack's `SKILL.md`, `reference/feedback-rules.md` and `reference/brand-s
 - 3D, real light, shadows, haze, reflections and a soft bloom are allowed when they are physical and crafted (the media reel, `engine/media-reel/`); glows on the mark, outlines on the mark, rainbow gradients and decorative particles stay banned;
 - the brand never varies: the exact mark (vector-derived, never retraced), brand blue as the one hero colour, lowercase supermemory in Geist, the official horizontal lockup at the end in an official colourway (§4 of anti-house-style.md).
 
+**How to read the rest of this section (2026-10-16).** Points (a), (d), (f, first two bullets) and (g) are her **taste**: they hold for every film. Points (b), (c), (e), the rossaxbt bullet in (f), the springs note and the table below describe the **explainer register** (the house style through Oct 14): pick them on a style card when a brief is an explainer in that frame, and count their recipe moves. The research behind this split: `references/motion-mastery.md`.
+
 As of 2026-10-06 these points are what she wants. The pack was built from cuts shipped between 2026-09-12 and 2026-10-01, mostly silent square explainers. **Where an older pack rule conflicts with the points below, these win. The current brief beats both.** Say in the delivery note which older rule you overrode.
 
 **(a) Explain the problem first.** Open on what is being solved, as something the viewer has felt, before any mechanism. Then why it matters (one sourced number), then the old way, then the turn. Template: `references/story.md`.
 
-**(b) 16:9 by default, with proper segregation.** 1920x1080. A text column carries one statement per beat under a section label such as `01 · THE PROBLEM`. A figure stage carries the diagram. A consistent HUD (section label, topic, hairline) and a chapter progress rule run the whole film. Frame spec: `references/brand.md` section 4. Square is for social cuts.
+**(b) [explainer register] 16:9 by default, with proper segregation.** 1920x1080. A text column carries one statement per beat under a section label such as `01 · THE PROBLEM`. A figure stage carries the diagram. A consistent HUD (section label, topic, hairline) and a chapter progress rule run the whole film. Frame spec: `references/brand.md` section 4. Square is for social cuts.
 
-**(c) supermemory branding from the website and the brand kit.** White or paper ground, square corners, 1px hairline cards, uppercase letter-spaced Geist Mono labels, Geist statements with most words at ink 45% and key words in full ink, dashed connectors, dot-grid figures, the blue tile with the white mark, big Geist numbers with a small `+` or unit, the blue flower-field film, the official lockup. Details and measured values: `references/brand.md`.
+**(c) [explainer register; the brand itself always holds] supermemory branding from the website and the brand kit.** White or paper ground, square corners, 1px hairline cards, uppercase letter-spaced Geist Mono labels, Geist statements with most words at ink 45% and key words in full ink, dashed connectors, dot-grid figures, the blue tile with the white mark, big Geist numbers with a small `+` or unit, the blue flower-field film, the official lockup. Details and measured values: `references/brand.md`.
 
-**(d) Lots of movement.** Her takeaway from the @himanshubuildss reel: "people love when there's a lot of movement, things blending into each other from one thing to the other." One continuous take. Each scene grows out of the last. Objects transform instead of fading or cutting. Something happens on every beat. No dead hold over about 1s, except the final still. Target 60% or more of frames moving. Catalogue: `references/motion-grammar.md`.
+**(d) [her taste] Lots of movement.** Her takeaway from the @himanshubuildss reel: "people love when there's a lot of movement, things blending into each other from one thing to the other." Each scene grows out of the last; things blend rather than fade. No dead hold over about 1s, except the final still. Target 60% or more of frames moving. **How** it blends changes per film (a morph, a match cut, a medium swap, light passing, a fold): the style card picks one family (anti-house-style.md §3). The old catalogue of morphs: `references/motion-grammar.md`.
 
-**(e) Polish.** 60fps with 4-subframe motion blur, text that rises from a mask line, a camera that pushes and pulls so each moment fills the frame. Then measure it (`references/qa.md`).
+**(e) Polish.** Polish is the craft the style card names, then measured (`references/qa.md`): curves from a named family, a shutter whose samples follow speed (or steps and smears), a finishing pass, sound 0 to 2 frames after its picture (`references/motion-mastery.md`). The old polish recipe (4-subframe blur on everything, mask-rise text, a camera push on every beat) belongs to the explainer register and counts toward the 4-of-12 recipe cap.
 
 **(f) Her notes on the mcp-upload v2 cut (2026-10-05), applied in v3 and now standing rules:**
 - **About 25 to 30 seconds** for a 16:9 explainer. She set 25 to 26s, then asked for 4 more seconds on mcp-upload v4 because the corruption beat was not understandable: comprehension beats the cap. Every key visual change (a failure, a turn, a result) needs its own 2 to 3s with the camera on it, and a before/after ("sent" vs "received") when something breaks. Merge statements before cutting a chapter; 8 statements of 2.6 to 3.0s plus a ~1.2s turn and a ~2.6s end card fits.
 - **Diagrams bigger.** The figure is 1040px wide (x 800-1840), labels inside it are 14 to 17px in world units, and the camera sits at 1.6 to 2.3x zoom for most beats so the active pair fills the frame. Wide shots (about 1.15x) only for a beat's first second.
-- **Cooler, like her rossaxbt references:** a cursor drives the story with real drags and clicks (scaled with the camera, click ripples), the camera is never still (a quick ease move at each beat, then a slow smoothstep drift that follows the action), something lands every half second, and arrivals use a closed-form spring with slight overshoot.
+- **[explainer register] Cooler, like her rossaxbt references:** a cursor drives the story with real drags and clicks (scaled with the camera, click ripples), the camera is never still (a quick ease move at each beat, then a slow smoothstep drift that follows the action), something lands every half second, and arrivals use a closed-form spring with slight overshoot. These are recipe moves 6, 7, 8 and 5: use them only when the style card picks this register, and cap the film at 4 recipe moves.
 - Measure motion with the pack metric (`references/qa.md` 2.3), never a looser one. v3: 72.9% moving, longest still 0.93s before the end card; v2 measured 31.4% on the same metric.
 
 **(g) Her notes from 2026-10-05 and 2026-10-06 (the one-command and namespaces films, mcp-upload v5).** Full log with quotes: `references/lessons.md`.
@@ -86,7 +88,7 @@ As of 2026-10-06 these points are what she wants. The pack was built from cuts s
 - **Name things with the product's words.** Dhravya asked that the mcp-upload film say supermemory has an MCP App: use the term the docs, code and posts use, and check it before rendering.
 - **Render one frame at a time** (CoreGraphics on several threads misdraws edges); only pure maths runs in parallel.
 
-**What this changes in the pack**
+**What this changed in the pack (the explainer register)**
 
 | Older pack rule | Now |
 |---|---|
@@ -101,7 +103,7 @@ As of 2026-10-06 these points are what she wants. The pack was built from cuts s
 | Product UI is a real capture only | for her product films, rebuild it in vector from the measured DOM; no screen-recording upscales |
 | Silent, or a quiet 90-110 BPM bed | when she asks for music: an original score in code on a 160 BPM grid with CC0 effects; never a commercial song |
 
-**Springs:** the pack allowed at most one spring per piece; her "make it cooler like the videos I shared" (the rossaxbt reels, springs throughout) moved this. v3 uses one spring family (closed-form, freq about 2.4Hz, damping about 0.6, slight overshoot) for every arrival. If she pushes back, fall back to critically damped steps. Details in `references/motion-grammar.md` section 2.
+**Springs:** the default since 2026-10-15 is no overshoot (damping 1.0); overshoot only for things thrown, dropped or released, 2 per film at most, with frequency set by mass (anti-house-style.md §4, rule 6). The old one-family spring (2.4Hz, damping 0.62, overshoot on every arrival, from the rossaxbt reels) is the explainer register's spring and a known tell; never copy its constants into a new film. Details of the old family: `references/motion-grammar.md` section 2.
 
 ---
 
@@ -194,6 +196,8 @@ Product films render a 3840x2160 master (`SCALE=2`) and a lanczos 1080p cut, and
 
 Commands, the zone finding, motion blur, footage, audio, folder layout and the engine section: `references/pipelines.md`. Two reference engines: `engine/reference-16x9.swift` (explainers, the mcp-upload film) and `engine/console-film/` (vector console, terminal, beat grid, synth score, brand-film background). Her pack's Python renderers and HyperFrames or Remotion need installs; ask first.
 
+**The motion kit (2026-10-16).** `engine/kit/motionkit.swift` turns the research into code: curve families by role from published systems (Material, Carbon productive and expressive, luxury expo, editorial quart; pick one per film, never the last film's), springs set by duration and bounce (bounce 0 by default), per-layer stepped time and smears (type steps, the world glides), speed-driven shutter samples, log-space zoom, frame-rate independent smoothing, line-masked reveals, reading time, typing at the measured human rhythm, SFX 1 frame after picture, film-finish numbers. Concatenate it into a build instead of copying an old film's `lib.swift` feel constants.
+
 **Real 3D and GPU (2026-10-15).** Metal compiles `.metal` source at run time, so raymarched signed-distance scenes render here with nothing installed: about 0.2s a 1080p frame with soft shadows, AO, a glossy floor and haze on the M5. `engine/gpu/` is the one-shader harness; `engine/media-reel/` is the full film engine (one scene, many media, CoreImage post, CoreText type, light-sweep handovers, anamorphic paint, a log-space pull-back with speed-driven motion blur). The mark's exact 3D field comes from its vector path (`markfield.swift`). Toolbox notes: `~/personal-supermemory/research_notes/Motion mastery/lane-d-toolbox.md`.
 
 ---
@@ -209,7 +213,7 @@ Commands, the zone finding, motion blur, footage, audio, folder layout and the e
 - [ ] Never two statements on a frame; each holds 2.5s+; strips across every change
 - [ ] Busiest frame and every statement readable at 390px wide
 - [ ] Copy grep: zero em dashes (U+2014) and semicolons, lowercase supermemory, every number sourced
-- [ ] Anti-house-style: the style card is in the README and its row in `style-log.md`; at most 2 of 11 dimensions shared with the last three films; recipe moves 4 of 12 or fewer; no `01 ·` labels; the logo-off test passed (`references/anti-house-style.md` §2)
+- [ ] Anti-house-style: the style card is in the README and its row in `style-log.md`; at most 2 of 11 dimensions shared with the last three films; recipe moves 4 of 12 or fewer; no `01 ·` labels; the logo-off test passed (`references/anti-house-style.md` §2). Run `python3 -I engine/tools/tells.py <film-src> --log references/style-log.md` (exit 1 = a cap is broken; hits mean "look here")
 
 Commands and targets: `references/qa.md`.
 

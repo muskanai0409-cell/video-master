@@ -172,6 +172,10 @@ Not a logo slam (B §10.9; `anti-house-style.md` §5): anamorphic alignment, def
 
 ## 6. What to build next (lane B §14, in order)
 
+**Done (Oct 16):**
+- Items 1 and 3 are now `engine/kit/motionkit.swift`: curve families, duration-and-bounce springs, stepped time, smears, speed-driven shutter samples, log zoom, typing rhythm, line reveals, SFX timing and film-finish numbers.
+- The rules are enforced by `engine/tools/tells.py`.
+
 1. **A curve-family switch with closed-form springs set by duration and bounce.** A damping ratio of exactly 1 minus bounce, as checked in SwiftUI on this Mac.
 2. **Variable Geist:** a `geist(weight:)` helper with the fixed-slot layout rule. This unlocks M2 and M22.
 3. **Per-layer time steps and a shutter-angle setting:** M6 and M7.

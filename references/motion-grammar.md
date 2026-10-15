@@ -1,5 +1,7 @@
 # Motion grammar: one continuous take
 
+> **Read this first (2026-10-16).** This file is the grammar of the **explainer register**, the house style through Oct 14. Lane A traced it to the viral Claude motion recipe of launch week (mask rise, spring pops, flood and shrink, an event on every beat, a cursor, zoom to fill, 4-subframe blur): it is what made her say the films carry an "Opus 5.5 watermark". It is still a valid option when a style card picks the explainer register, but a film may use at most 4 of the 12 recipe moves. For any film, start with `motion-mastery.md` and `anti-house-style.md`.
+
 How to make a supermemory film move the way Muskan now wants: "a lot of movement, things blending into each other from one thing to the other." Every scene grows out of the last one.
 
 **Sources**

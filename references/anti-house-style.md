@@ -76,7 +76,8 @@ Every recent film opened with a mono `01 · SECTION` label. **These are banned b
 4. **Render the first still, then name its defaults:** labels, ground, type entrance, curve, camera, ending. Ban each one by name and render again. "Make it not look AI" doesn't work; named bans do (A-01).
 5. **Run the recipe-distance check** (§1.1): four of the 12 at most.
 6. **Run the logo-off test.** Hide the lockup and show a fresh critic subagent only the frames: "which defaults of AI-made motion do you see?" Anything it names in the first 3s gets changed.
-7. **Budget time for the look.** The films that stand out took hours and several critique rounds: LexnLin about 8 hours, Aubry 5 versions, Jake Moran 5 prompt rounds.
+7. **Lint it.** `python3 -I engine/tools/tells.py <film-src> --log references/style-log.md` finds named defaults, recipe moves, copied house constants and a missing or too-similar style card. Build the feel from `engine/kit/motionkit.swift` (a curve family and a cadence chosen on the card), never from an old film's `lib.swift`.
+8. **Budget time for the look.** The films that stand out took hours and several critique rounds: LexnLin about 8 hours, Aubry 5 versions, Jake Moran 5 prompt rounds.
 
 ## 3. The style card (11 dimensions)
 
