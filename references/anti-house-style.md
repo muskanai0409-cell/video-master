@@ -121,7 +121,7 @@ Write it in the film's README before the first still. Each dimension below has i
 | 10 | **No two consecutive sections the same length.** At least one odd-length section (5, 7 or 11 beats) and one silence of 0.5s or more |
 | 11 | **One impact event per film at most**, with a device new to the log. Silence, a cut to black or one recorded sound all count |
 | 12 | **The ground never pulses to the music.** It reacts to 2 story events at most |
-| 13 | **One scramble or typing effect per film at most.** Real typing has human jitter (40 to 120ms a key, pauses at word breaks) |
+| 13 | **One scramble or typing effect per film at most.** Real typing follows the measured rhythm (136M keystrokes): 90 to 180ms a key, about 120ms for a fast typist, never under 60ms, plus about 200ms at spaces and a breath before the key word (lane B §1.10, M4; corrected Oct 16 from "40 to 120ms") |
 | 14 | **The ending device differs from the last 2 films.** The mark never assembles from dots in consecutive films. The ending runs under 2.5s |
 | 15 | **Rotate the hook.** Never the same hook type twice in a row |
 | 16 | **The blue field, lattice and grid as the main ground:** in 1 of any 3 films at most, and for half that film's runtime at most |
