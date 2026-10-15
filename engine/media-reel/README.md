@@ -82,21 +82,26 @@ RES=4k ./parts/run.sh                                                         # 
 - `FORCE=<n>` renders any medium at any time.
 - `FIN_F` and `MARK_PX` move the final camera.
 
-## QA (measured on the 1080 review render, before the sweeps)
+## QA (measured on the delivered files, 2026-10-15)
 
 | Check | Result |
 |---|---|
-| Format | 1920x1080, 60fps, 1188 frames, 19.80s, yuv420p, bt709 (tv) |
-| Motion (pack metric: 30fps, 160x90, YAVG 0.15) | 82.6% moving, longest still before the hold 0.07s (her target: 60%+, under about 1s) |
-| Hold | frames 1067 to 1188 bit-identical (`framemd5`), 2.03s |
+| Format | 4K: 3840x2160 and 1080: 1920x1080, both 60fps, 1188 frames, 19.80s, yuv420p, bt709 (tv), AAC 48k |
+| Motion (pack metric: 30fps, 160x90, YAVG 0.15) | 76.6% moving on the 1080 cut (82.6% on the direct 1080 review render, whose grain is coarser). Longest still before the hold: 0.17s (her target is 60%+ moving and stills under about 1s) |
+| Hold | the last 122 frames (2.03s) are bit-identical in both files (`framemd5`) |
+| Pops (native 60fps, 3x the neighbours) | 39 flagged, all deliberate: the type steps at 15fps and the riso at 12fps. 0 others, so the light sweeps and cuts are clean |
 | Paint | invisible until it is painted on (`paintcheck`: 0.0000% of the frame before 15.24s) |
+| Sync | audio energy jumps land 10ms after every bar cut (the kick attack), at 2.41, 4.81, 12.01, 14.41 and 16.84s |
 | Loudness | -13.7 LUFS integrated, -1.2 dBTP peak |
 | Copy | lowercase supermemory; no em dashes or semicolons on screen |
 
+**Stills:**
+- `../media-reel-v1-media.png`: the six media, one frame each.
+- `../media-reel-v1-end.png`: the end frame, 4K.
+
 **Not yet done:**
-- The score has not been listened to by anyone.
-- The phone-size read of the final line (40px at 1080, about 8px on a 390px phone) is small, but the lockup reads.
-- The sweeps went in after this QA. The 4K master is re-measured in the delivery note.
+- Nobody has listened to the score.
+- The line under the lockup is 40px at 1080, about 8px on a 390px phone. The lockup reads; the line is small.
 
 ## Deliberate deviations from older rules
 

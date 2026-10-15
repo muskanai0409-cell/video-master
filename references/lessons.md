@@ -681,3 +681,15 @@ $FF -hide_banner -i "$V" -vn -af ebur128=peak=true -f null - 2>&1 | grep -A14 "S
 | Ground for explainers | The dusk photo | "plain white", then paper with a field-film flood | #14, #17, #32 |
 
 - 2026-10-10 · plugins film v3: "standard 16:9 rather than stretching it so much" (v1 and v2 were 2:1 at her earlier ask) → 16:9 is the default again. "very popular genz songs tune ... drake, or don toliver" → original melodic-trap score in code (dots-film-src/trap.swift voices), never the real song or melody; say why in one line and offer the platform's licensed library for real sounds.
+- 2026-10-15 · plugins film v4, team feedback on v3 (Slack #content-docs-growth) plus her "make sure you're giving your best, like absolute best i dont wanna see mediocre shit":
+  - **Mahesh:** "we want them to setup with single command `npx supermemory plugins` not two - three steps for each plugins. We can still show one command ... `--platform` and it should also do individual installs". So: never per-plugin step lists. Show one command, then the same command recalled from history with a flag, where only the platform word changes.
+  - **Shardul:** "the text in the UI is extremely small and the pop up is extremely big compared to it". So draw every element at one true UI scale (macOS points x 1.27), and get readability from a screen-recording camera zoom, never from oversized windows. The camera, the halftone wallpaper and the glass all scale together. Drop invented windows: show only real surfaces.
+  - **Truth:** check every command on screen against the published CLI source (npm tarball) before rendering. In supermemory@5.0.2 the installer is `plugin` (singular) with `--only`, `plugins` is the connection manager, and `--platform` does not exist. Mahesh's syntax was rendered on his word and flagged to her; the swap is two lines in `timeline.swift`.
+  - **The critic pass works:** three fresh critics (feedback, motion, readability) on a fast draft found 30 issues. The biggest: frame 0 had no message; the command read at about 5px on a phone; seven identical clicks read as "run seven commands"; the pour flashed. Fixes:
+    - frame 0 close on the dock;
+    - ride the droplet to a 48px command;
+    - two full clicks, then a sweep on 8ths;
+    - the platform word on a lighter box (3:1 contrast);
+    - one continuous pull-out;
+    - the command types into a 46px end chip.
+  - **Pipeline:** render the 4K in parallel slices as separate processes (never threads), each piped straight into x264, then join them with the concat demuxer. Put every compile step on its own line in shell scripts, because `set -e` ignores a failure inside an `&&` chain (the old score binary ran silently).
