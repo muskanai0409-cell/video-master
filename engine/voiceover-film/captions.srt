@@ -1,0 +1,99 @@
+1
+00:00:00,250 --> 00:00:01,299
+one command,
+
+2
+00:00:01,319 --> 00:00:03,406
+and your agent starts remembering you.
+
+3
+00:00:03,850 --> 00:00:06,756
+without it, every session starts from zero.
+
+4
+00:00:06,776 --> 00:00:09,375
+you're telling it you use pnpm.
+
+5
+00:00:09,395 --> 00:00:10,229
+again.
+
+6
+00:00:10,668 --> 00:00:14,068
+ok so, open agents and mcp.
+
+7
+00:00:14,088 --> 00:00:15,242
+start with the plugin,
+
+8
+00:00:15,262 --> 00:00:17,389
+it loads your memory every session.
+
+9
+00:00:17,634 --> 00:00:18,718
+one command covers
+
+10
+00:00:18,738 --> 00:00:22,244
+Claude Code, Cursor, Codex and OpenCode.
+
+11
+00:00:22,264 --> 00:00:24,971
+browser sign-in, no key to copy,
+
+12
+00:00:24,991 --> 00:00:26,273
+and there's your agent.
+
+13
+00:00:26,716 --> 00:00:29,621
+other mcp clients can use this url,
+
+14
+00:00:29,641 --> 00:00:31,363
+and there's a cli too.
+
+15
+00:00:31,782 --> 00:00:33,719
+giving your own app memory?
+
+16
+00:00:33,739 --> 00:00:35,576
+paste the setup prompt from overview
+
+17
+00:00:35,596 --> 00:00:36,772
+into your agent.
+
+18
+00:00:36,792 --> 00:00:38,937
+it asks before changing code.
+
+19
+00:00:39,384 --> 00:00:40,971
+this part needs a key.
+
+20
+00:00:40,991 --> 00:00:42,621
+pick its access, copy it,
+
+21
+00:00:42,641 --> 00:00:44,076
+it only shows once.
+
+22
+00:00:44,500 --> 00:00:46,566
+your first call lands in requests,
+
+23
+00:00:46,586 --> 00:00:48,734
+with its status and how long it took.
+
+24
+00:00:49,351 --> 00:00:52,750
+new session, it already knows you use pnpm.
+
+25
+00:00:53,085 --> 00:00:55,356
+next, giving it more to remember.

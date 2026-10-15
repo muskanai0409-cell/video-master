@@ -10,6 +10,8 @@ encode with libx264. Proven on two shipped cuts (2026-10-05):
 | `reference-square-v1.swift` | 1080x1080 silent explainer, simpler grammar. Shows the AVFoundation writer (do not use it for finals, see below). |
 | `brand-lattice/` | The learner-1 teaser engine (v11, Oct 15): the brand book's dot field, the glass mind with a reaction-diffusion brain (`mind.swift`, lab: `mindlab_main.swift`), token streams, the freeze sweep, the dissolve into the mark, and the Apple Loops score (`make_audio_loops.sh`, `KIT=longing|yearning|fullmoon`). Guide: `references/motion-systems.md` §1, §2, §4. |
 | `memory-board/` | The forgetting-on-purpose engine (v3, Oct 14): boxed pixel-art facts that reflow between layouts, the morphing top bar (question, split-flap, code editor), status pills, the vanish, the history row, a continuous camera, and the Regrets loop score (`make_audio.sh`). Guide: `references/motion-systems.md` §3, §4. |
+| `morph-chain/` | The local v0.0.9 launch film (Oct 14): one survivor container through docker → v5 → security → counter → squares → mark, on the brand book's dot field, with Apple Loops scores. Guide: `references/motion-systems.md` §5. |
+| `voiceover-film/` | Console series part 1 (Oct 14): the console rebuilt in vector, a Kokoro voiceover with word-locked picture timing, ducking and captions. Lives next to its siblings in `~/personal-supermemory/reports/videos/` (relative paths). Guide: `references/voiceover.md`. |
 | `assets/fonts/` | Geist + Geist Mono variable fonts (wght axis 0x77676874). |
 | `assets/lock_mark.png`, `lock_word.png` | official supermemory lockup as luminance masks. Geometry: mark 588x480, gap 230, wordmark 3182x381, wordmark top offset 99. Horizontal only, never stacked. |
 

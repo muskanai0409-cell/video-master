@@ -213,3 +213,13 @@ The brand surfaces and media for supermemory films. Ask before downloading media
 ## Named in posts but never linked
 
 Mixkit and Pexels (free music, SFX and stock footage, in @rossaxbt's launch prompt), HyperFrames, Higgsfield's MCP, Seedance, Dreamina, Kling, MiniMax, kie.ai, ElevenLabs, GPT Image 2 and 2.5. See `bookmarks.md` for the posts.
+
+
+## Added 2026-10-15
+
+| Site | What it is | Use it for | From |
+|---|---|---|---|
+| [skills.wheresryan.sh/anatomy](https://skills.wheresryan.sh/anatomy) ([GitHub](https://github.com/wheresryan22/anatomy)) | the anatomy skill's gallery: interactive isometric "machine" figures that act out an idea | explainer figures for docs and posts; installed in her Claude Code on Oct 14 | [@ox8erlin reel](https://www.instagram.com/reel/DebfVQahw30/) (her Instagram save, Oct 13) |
+| [hairline.lucasmarkes.com/skill](https://hairline.lucasmarkes.com/skill) ([GitHub](https://github.com/lucasmarkes/hairline)) | the hairline skill: concepts drawn as one-file line animations | Linear-style line animations; not installed | [@shai.hq reel](https://www.instagram.com/reel/DeEhSRWBAi2/) (her Instagram save, about Oct 4) |
+
+Her other Instagram saves from Oct 8 to 15 (two web-design reels: @design4me__'s free portfolio templates and @ascenta.studio's "your website is everything") name no new sites.

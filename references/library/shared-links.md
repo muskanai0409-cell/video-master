@@ -335,3 +335,43 @@ She never sent a music or sound link. The sound guidance comes from the sources 
 10. **@0xwhrrari's "Motion Engineering" article:** quoted in both @rossaxbt posts; read it before revising the skill.
 11. **Sean's and Hugging Face's explainers:** their diagram vocabulary (vector database, RAG, chunking) is used in her script but in no skill.
 12. **Hyperagent:** no skill documents the Hyperagent route except the memory note.
+
+
+---
+
+## Added 2026-10-15: links and files she sent from Oct 6 to Oct 15
+
+**Source:** a read-only scan of her own messages in every Claude Code chat from 2026-10-06 11:23 UTC to 2026-10-15. The scan skips summaries, pasted Reddit content, tool output and system text.
+- 106 links and files in total.
+- Kept below are the 21 that matter for video, motion, design or sound.
+- The rest were SEO, growth, outreach, docs and dashboards.
+- Post text was checked on api.fxtwitter.com on 2026-10-15.
+
+| Date | Chat | What she sent | Her words (short) | What it is | Covered in |
+|---|---|---|---|---|---|
+| Oct 6 | this one | [@noahelhadedy](https://x.com/noahelhadedy/status/2107137723387584705), [@devjuninho](https://x.com/devjuninho/status/2107144645524291730), [@MaybeFlorent](https://x.com/MaybeFlorent/status/2107080020925845888) | "this too" | design site lists | `websites.md` (N3, D, F) |
+| Oct 7 | another | [@ShenSeanChen](https://x.com/ShenSeanChen/status/2107479490691846607) | "what tool is he using for screen recording?" | a 20.8-min YouTube-style explainer on agent observability | a tooling question |
+| Oct 7 | another | [@boltdotnew](https://x.com/boltdotnew/status/2107846455180288289) | "what to quote tweet and any graphic?" | 16.7s UI launch demo | `13-shared-oct.md` #12 |
+| Oct 7 | another | [@envato](https://x.com/envato/status/2107924147435115006) + brief + assets folder | (creator brief) | 45s Burst mode launch film | `13-shared-oct.md` #12 |
+| Oct 8 | another | [@Parthivdzns](https://x.com/Parthivdzns/status/2108112062102876549) | "check these if you want some info on the design and inspo" | Parthiv's 12s brand film | lessons #70, `13-shared-oct.md` #7 |
+| Oct 8 | this one | `~/Downloads/FyYQiYPoWEFQZdBU (1).mp4` | "the next video should be around these plugins ..." | the plugins brief, spoken over a capture | lessons #69 |
+| Oct 8 | this one | `~/Downloads/4WmFU6bGo8HDxPHB.mp4` | "also take inspo from this something parthiv made" | Parthiv's film | lessons #70 |
+| Oct 9 | another | `~/Downloads/640cd137-…mp4` | "branding wise we can improve this video" | the memory graph film | lessons #89 |
+| Oct 9 | this one | [@KeshWelch](https://x.com/KeshWelch/status/2108375862282215425) | "taking some inspo from this video ..." | 30s globe launch film | `13-shared-oct.md` #4, lessons #88 |
+| Oct 10 | another | `~/Downloads/ribRgeZ16XYIBvMGyQ-0dQ.mp4` | "standard 16:9 rather than stretching ... genz songs" | the plugins film v2 | lessons log, end of §6.2 |
+| Oct 10 | this one | [@workersio](https://x.com/workersio/status/2107923334134710653) | "learn this video" | 45s launch film | `13-shared-oct.md` #1, lessons #73 |
+| Oct 10 | another | [@irabukht](https://x.com/irabukht/status/2108585781581217906) | "learn this, how whisper flow did their ads" | the paid UGC ads model (thread) | `13-shared-oct.md` #11 |
+| Oct 10 | another | [@Aartiutwani](https://x.com/Aartiutwani/status/2108711667580481606) | "something more relatable and cool, see something like this" | SF billboards (photos) | `13-shared-oct.md` #14 |
+| Oct 12 | this one | [@supermemory learner-1 film](https://x.com/supermemory/status/2097035274094272935) + [a Pinterest search](https://in.pinterest.com/search/pins/?q=memory%20stretch%20blue%20streaks%20human%20brain&rs=typed) | "memory streaks coming from your brain ... pictures from Pinterest like inspo" | the brand's 80s announcement film; a mood search | lessons #74, `13-shared-oct.md` #6 |
+| Oct 12 | this one | [@rajzmotion](https://x.com/rajzmotion/status/2109273645654888831), [Instagram reel](https://www.instagram.com/reel/DeZLTwLoss7/) | "also see these 2 videos for inspo and usage" | a launch film; @design4me__'s reel | `13-shared-oct.md` #2, #3 |
+| Oct 12 | another | `~/Downloads/fbe23b16-…mp4` | "make it look better and the flow as well" | the mcp upload film v4 | lessons #91 |
+| Oct 13 | another | (images) | "I JUST SENT YOU FOR INSPIRATION MAKE SOMETHING NEW DONT COPY" | viral dot-graphic references | lessons #97 |
+| Oct 14 | another | `~/Desktop/Screenshots/Screen Recording 2026-10-06 …mov` | "we can also add stuff from these posters as well" | posters (for the SEO board's design) | design input, not video |
+| Oct 14 | this one | (a photo of Dhravya) | "can we have a skull pixelated of dhravya" | used once for v10, then dropped | lessons #84, #85 |
+| Oct 14 | this one | [the Pinterest pin](https://in.pinterest.com/pin/310255861852183938/) | "you can get beautiful skulls from pinterest ..." | a glowing glass head with a brain | `motion-systems.md` §2, lessons #85 |
+| Oct 14 | another | Instagram saves: [anatomy](https://www.instagram.com/reel/DebfVQahw30/), [hairline](https://www.instagram.com/reel/DeEhSRWBAi2/) | "get that video ... and the github skill" | two animation skills | lessons #98, `13-shared-oct.md` #9, #10 |
+
+**Left out on purpose:**
+- a YouTube Music song for her own Instagram story;
+- the Dhravya interview link (@omarwasm, for a quote tweet);
+- all SEO, growth and dashboard links.

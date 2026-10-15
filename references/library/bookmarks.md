@@ -540,3 +540,20 @@ Every external URL linked from the kept bookmarks (post text, X Article or quote
 
 Mixkit and Pexels (free music, SFX and stock footage in @rossaxbt's launch prompt); HyperFrames (@HyperFrames_); Higgsfield and its MCP; Seedance 2.0 and 2.5, Dreamina; Kling; MiniMax; kie.ai; ElevenLabs; GPT Image 2 and 2.5; Grok Imagine; video-use; vugola MCP; Cutroom (a personal tool); TrendTrack; Pixero; Magnific MCP; Unreal Engine 5.8; Gemini agentic video understanding; Moda and Melius.
 
+
+---
+
+## Added 2026-10-15: bookmarks from Oct 5 to Oct 8
+
+`~/content-engine/data/bookmarks.tsv` grew from 604 to 637 rows on Oct 8, so 33 bookmarks are new since this file was built. Six matter for video or design:
+
+| Post | Date | Why it's here | Where it's studied |
+|---|---|---|---|
+| [@workersio](https://x.com/workersio/status/2107923334134710653) | Oct 7 | launch film: survivor object, exploding counter, word-by-word headlines | `videos/13-shared-oct.md` #1 |
+| [@Parthivdzns](https://x.com/Parthivdzns/status/2108112062102876549) | Oct 8 | Parthiv's 12s brand film | #7 |
+| [@MarkKnd quoting @dankimxyz](https://x.com/MarkKnd/status/2107152661070147907) | Oct 5 | pixel kinetic type: words become pixel icons, beat strobe | #5 |
+| [@defileo](https://x.com/defileo/status/2107258340376187371) | Oct 5 | a 4:5 product demo with a score that climbs from 37 to 82, 1.18M views | #13 |
+| [@ideogram_ai](https://x.com/ideogram_ai/status/2105327223431737780) | Sep 30 (saved later) | Ideogram 4.5, an AI image edit model with no artifact buildup across turns | #13 |
+| [@nikosolenne](https://x.com/nikosolenne/status/2107490745552683382), [@himanshubuildss](https://x.com/himanshubuildss/status/2107063044279058483) | Oct 5 to 6 | design reference site lists; every site is already in `websites.md` | #13 |
+
+The other 27 are SEO, growth and agent posts. Bookmarks saved after Oct 8 are not in the TSV yet. Syncing them needs her X login in the browser pane: say "sync my new bookmarks" (read only).

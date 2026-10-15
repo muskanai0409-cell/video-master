@@ -1,6 +1,12 @@
-# Motion systems (built Oct 12 to 15, 2026)
+# Motion systems (built Oct 6 to 15, 2026)
 
-These four systems came out of the learner-1 teaser (v7 to v11) and the "forgetting on purpose" film (v1 to v3). Each one is in `engine/`, ready to copy. Her notes on each are in `lessons.md` (#74 to #85).
+These systems came out of the films made from Oct 6 to 15:
+- the learner-1 teaser (v7 to v11);
+- "forgetting on purpose" (v1 to v3);
+- the local v0.0.9 launch film;
+- console series part 1.
+
+Each one is in `engine/`, ready to copy. Her notes on each are in `lessons.md` (#74 to #98).
 
 | System | Engine | Use it for | Her verdict |
 |---|---|---|---|
@@ -8,6 +14,9 @@ These four systems came out of the learner-1 teaser (v7 to v11) and the "forgett
 | Glass mind | `engine/brand-lattice/mind.swift` | A head or brain as the film's subject: "the model", "the agent", "a mind" | v11 is the current pick. It replaced the skull, which Shardul found off-putting |
 | Memory board | `engine/memory-board/` | Explainers about facts changing: expire, update, filter, forget on command, recall | She preferred the board (boxes, blue) to a sparse white rebuild (#82, #83) |
 | Apple Loops score | `brand-lattice/make_audio_loops.sh`, `memory-board/make_audio.sh` | Real-sounding music with no licence budget | She took the loop tracks after rejecting two code-made scores (#80) |
+| Morph chain | `engine/morph-chain/` | Launch films of 20s or less: one container that changes state on the beat, ending as the mark | Built to her brief "one thing blended into other ... super duper polished" (#92) |
+| Voiceover-keyed film | `engine/voiceover-film/` + `references/voiceover.md` | Explainers with a spoken voice (Kokoro af_bella), the picture locked to each word | "the latency should be perfect" (#93) |
+| Animation skills | anatomy (installed), hairline (not installed) | Interactive isometric "machine" figures (anatomy) or one-file line animations (hairline) for docs and posts | Her Instagram saves (#98) |
 
 ## Start a film from an engine
 
@@ -159,3 +168,42 @@ The board: twelve boxed pixel-art facts in a 4 × 3 grid, with chatter bubbles i
   - Use 4000.
 - **Mux with `-af apad -shortest`**: a 5ms-short audio track drops the last frame otherwise.
 - **A spike in a preview at frame 250** is x264's default keyframe, not the animation.
+
+## 5. Morph chain (`engine/morph-chain/`, local v0.0.9)
+
+**The survivor:** one paper container lives on the brand book's dot field. Each state change lands on a beat.
+- **Version:** "v0.0.9" is recalled out of the lattice. It wipes solid, then flies into the corner as the HUD.
+- **Command:** a prompt chip stretches into a command bar, and `docker compose up -d` is typed with one key sound per character.
+- **Terminal:** ENTER on the drop opens a terminal, with a pull bar and the result lines.
+- **API call:** the terminal becomes a v5 call (the docs' own example, `client.search("user_dhravya", …)`), and the namespace lights up.
+- **Request bar:** the call becomes a request bar: a 401 shuts the lock, the key row goes in, a 200 opens it.
+- **Counter:** the bar becomes a counter that rolls from 0 to 40%, with lattice streaks.
+- **Squares:** the counter is cut into ten squares. Nine fall back into the lattice, from the outside in.
+- **Mark:** the last square carves itself into the mark, using the mark's distance field thresholded down to zero.
+- **Lockup:** the lockup, then the install chip `$ npx supermemory local`.
+
+**Moves borrowed:** the @rossaxbt morph chain (edge springs, motion blur mid-resize), the @workersio survivor-becomes-logo and counter, and @LexnLin's recurring brand element (the version returns under the lockup).
+
+**Truth:** keep a claims ledger. Stylised terminal output is labelled illustrative, and unsupported team claims are flagged before posting.
+
+## 6. Voiceover-keyed film (`engine/voiceover-film/`, console series part 1)
+
+**The picture follows the voice:**
+- `audio/vo_build.py` makes the Kokoro read and conforms its pauses to the researched ranges.
+- It writes every word's *audible* onset to `vo_times.swift`.
+- `film.swift` keys every move to those times: the picture lands 2 frames early, and clicks sound 2 frames after their visual.
+
+**The console:** rebuilt in vector from the measured DOM (`console.swift`), never a screen recording. `pages_test.swift` renders every page state for checking.
+
+**Sound:** music ducked under the voice with an 80ms look-ahead, 19 LU under while she speaks. The full spec is in `references/voiceover.md`.
+
+## Pixel kinetic type (a reference to try next)
+
+From @dankimxyz's Airwallex film (`library/videos/13-shared-oct.md` #5), the closest outside reference to the brand's dot system:
+- words swap for pixel icons as they are spoken;
+- pixel letters dissolve into a dithered field;
+- a giant pixel-font number;
+- a beat-locked strobe for one short stretch;
+- partner logos in a hairline grid.
+
+The brand-lattice engine already has the parts: the lattice, recall to diamonds, and Bayer dither.

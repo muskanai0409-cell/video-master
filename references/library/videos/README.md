@@ -18,7 +18,7 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [10-more-d.md](10-more-d.md) | more bookmarks D | 29 |
 | [11-more-e.md](11-more-e.md) | more bookmarks E | 31 |
 | [12-more-f.md](12-more-f.md) | more bookmarks F (long podcasts) | 6 |
-| [13-shared-oct.md](13-shared-oct.md) | videos she sent with "learn this" (Oct 2026), studied in the browser without downloading | 1 |
+| [13-shared-oct.md](13-shared-oct.md) | everything she sent or saved from Oct 6 to 15: "learn this" films, Instagram saves, new bookmarks (3 frame-studied in the browser without downloading; the rest from post data) | 14 |
 
 ## Launch film (60) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
 
@@ -72,6 +72,9 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [2#1](2-reels-b.md) | [@ZaroAI_](https://x.com/adxtyahq/status/2070138054233518426) (same video as 1#2) | 69s | 16:9 | 92K | 39% | 1.2s | 10.5 | -9.5 |
 | [2#3](2-reels-b.md) | [@tjcages](https://x.com/titouangillet_/status/2098423993652887785) | 55s | 16:9 | 89K | 89% | 4.9s | 4.4 | -8.7 |
 | [13#1](13-shared-oct.md) | [@workersio](https://x.com/workersio/status/2107923334134710653) | 45s | 16:9 | 60.6K | 72% | 0.9s | 0.0 | n/a |
+| [13#4](13-shared-oct.md) | [@KeshWelch](https://x.com/KeshWelch/status/2108375862282215425) | 30s | 16:9 | 78K | 95% | 1.1s | 0.0 | n/a |
+| [13#5](13-shared-oct.md) | [@dankimxyz via @MarkKnd](https://x.com/MarkKnd/status/2107152661070147907) | 19s | 16:9 | 8.9K | 49% | 1.7s | 108 (strobe) | n/a |
+| [13#6](13-shared-oct.md) | [@supermemory learner-1](https://x.com/supermemory/status/2097035274094272935) | 80s | 16:9 | 1.87M | 65% | 4.0s | 42 | n/a |
 | [3#18](3-code-craft.md) | [@gregpr07](https://x.com/gregpr07/status/2102984873351037161) | 18s | 16:9 | 58K | 89% | 0.7s | 13.3 | -14.9 |
 | [2#9](2-reels-b.md) | [@DhravyaShah](https://x.com/DhravyaShah/status/2021288232688943393) | 49s | 16:9 | 37K | 82% | 0.7s | 15.8 | -11.6 |
 | [3#25](3-code-craft.md) | [@claudeai](https://x.com/Miguel07Code/status/2105453292008661458) | 13s | 16:9 | 30K | 81% | 0.1s | 36.0 | -23.1 |
