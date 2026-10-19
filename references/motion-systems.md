@@ -129,7 +129,10 @@ The board: twelve boxed pixel-art facts in a 4 × 3 grid, with chatter bubbles i
 - Never ship loops on their own.
 - Decoded copies go to `~/Library/Caches/video-master/loops`, never into a repo.
 
-**Kits:** `/Library/Audio/Apple Loops/Apple/01 Hip Hop/`
+**Kits:** `/Library/Audio/Apple Loops/Apple/01 Hip Hop/` for the films below. For a new film, pick by tempo and key:
+- `python3 -I engine/tools/loop_index.py --bpm 109` indexes all 1,470 installed loops in about 3s. It reads tempo from each CAF's `pakt` frames, and key, beats, genre and instrument from its Apple Loops chunk. Output: `~/Library/Caches/video-master/loop-index.tsv`.
+- It lists the loops at that tempo, at half and at double, so a kit plays on the film's grid without time-stretching. The bundled ffmpeg only has `atempo`, which smears a harp or piano stretched by 17%.
+- The style card's sound dimension counts pack and key. Dreaming v2 dropped Chillwave "Harmonic Waves" (E major) because the media reel used Chillwave in E major. It took Modern RnB "Breathless" harp and piano (E minor, 109) and moved the picture grid to 109; the events were already within 0.15s of its beats.
 
 | Kit | Key | Kit BPM | Film BPM |
 |---|---|---|---|

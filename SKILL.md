@@ -214,7 +214,7 @@ Commands, the zone finding, motion blur, footage, audio, folder layout and the e
 - [ ] Never two statements on a frame; each holds 2.5s+; strips across every change
 - [ ] Busiest frame and every statement readable at 390px wide
 - [ ] Copy grep: zero em dashes (U+2014) and semicolons, lowercase supermemory, every number sourced
-- [ ] Anti-house-style: the style card is in the README and its row in `style-log.md`; at most 2 of 11 dimensions shared with the last three films; recipe moves 4 of 12 or fewer; no `01 ·` labels; the logo-off test passed (`references/anti-house-style.md` §2). Run `python3 -I engine/tools/tells.py <film-src> --log references/style-log.md` (exit 1 = a cap is broken; hits mean "look here")
+- [ ] Anti-house-style: the style card is in the README and its row in `style-log.md`; at most 2 of 11 dimensions shared with the last three films; recipe moves 4 of 12 or fewer; no `01 ·` labels; the logo-off test passed (`references/anti-house-style.md` §2). Run `python3 -I engine/tools/tells.py <film-src> --log references/style-log.md` (exit 1 = a cap is broken; hits mean "look here"). Pick loops with `python3 -I engine/tools/loop_index.py --bpm <film BPM>` so the sound dimension differs in pack and key from the last three films (`references/motion-systems.md` §4)
 - [ ] Balance (anti-house-style.md §4b): the one idea reads on a muted 390px sheet by 40% of the runtime, who and when are clear by 5s, the mark or brand blue is in the first 3s and blue fills a big part of a frame before the end card, nothing that must be read is blurred or under phone size, dark grounds carry grain
 
 Commands and targets: `references/qa.md`.
