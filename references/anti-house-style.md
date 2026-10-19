@@ -154,6 +154,7 @@ Write it in the film's README before the first still. Each dimension below has i
 | B3 | **Anything that must be read stays sharp and phone-sized.** Never pull focus onto, or blur, a line the story depends on. Reading text is at least 13px on a 390px phone (64px or more at 1080) | Contact sheet at 390px wide |
 | B4 | **Dark grounds and soft falloffs get grain or dither** (1 to 2% luma), or X's compression bands them | Encode, re-encode at a social bitrate, and look at the gradients |
 | B5 | **The anchor must read at once.** A prop that carries the metaphor (a projector, a machine) needs a rim light or a silhouette that reads at phone size. If it would need a caption, change the anchor | Show frame 0 to a fresh critic and ask what the object is |
+| B6 | **One place to look.** In a two-zone frame (text column plus subject), the text side carries one line or one chat bubble at a time. Explaining marks (rings, tags, stamps, threads) sit on the subject where the change happens, never as a side panel that repeats the subject's facts (her Oct 19 note on dreaming v3) | At 1fps on the phone sheet, each frame has one line on the text side and at most one marked spot on the subject |
 
 ## 5. Ending devices (rotate them)
 
