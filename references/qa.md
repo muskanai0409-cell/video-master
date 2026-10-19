@@ -19,6 +19,7 @@ V=/Users/muskan/personal-supermemory/reports/videos/<name>.mp4
 3. **The hardest 2 to 4 seconds.** Render every frame of it once and read a strip.
 4. **Arithmetic.** Measure every statement's width against the text column and every stack against the stage, in the engine, before rendering. Flag each contradiction with numbers (pack `supermemory-explainers` section 8).
 5. **Statements as data.** Captions and statements live in the timeline, so assert in code that at every frame at most one has alpha above 0, that each holds at least 2.5s (or the brief's floor), and that none starts before its subject's arrival time.
+6. **Tone curves and light mixes.** Plot every tone curve on a 0 to 2 ramp and check it rises everywhere: dreaming v2 and v3 shipped a shoulder that fell after 0.85, so brighter light came out darker (whites read grey, sunlit paper read as beige card). Sum the light weights across every crossfade between looks (day to night, night to morning) and check the total never dips; a dip reads as a muddy grey frame.
 
 ---
 
