@@ -132,6 +132,7 @@ From the pack (`reference/feedback-rules.md`) and her memory notes. These hold f
 - No decorative gradients, glow on the mark, particles for their own sake, whooshes, white flashes, stock wipes. Real 3D light, shadows, haze and reflections are allowed when a style card calls for them (§1 (0), 2026-10-15).
 - End on the thesis, then the official horizontal lockup, then a still hold of 1.2 to 2s whose decoded frames are identical.
 - Readable at 390px wide.
+- Followable at real speed, not only as stills: about 6 new words a second or less in every subtitle window, and each key fact settled for 1.5s or more before the next thing moves. Measure it (`references/qa.md` 1.7) and run the blind first-watch test (§3 there); still-sheet critics passed dreaming v5 at clarity 8 and she still could not follow it (lesson #113).
 - Encode tagged bt709 and check the decoded hex against the tokens.
 
 **Process**

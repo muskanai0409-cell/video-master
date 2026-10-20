@@ -20,6 +20,7 @@ V=/Users/muskan/personal-supermemory/reports/videos/<name>.mp4
 4. **Arithmetic.** Measure every statement's width against the text column and every stack against the stage, in the engine, before rendering. Flag each contradiction with numbers (pack `supermemory-explainers` section 8).
 5. **Statements as data.** Captions and statements live in the timeline, so assert in code that at every frame at most one has alpha above 0, that each holds at least 2.5s (or the brief's floor), and that none starts before its subject's arrival time.
 6. **Tone curves and light mixes.** Plot every tone curve on a 0 to 2 ramp and check it rises everywhere: dreaming v2 and v3 shipped a shoulder that fell after 0.85, so brighter light came out darker (whites read grey, sunlit paper read as beige card). Sum the light weights across every crossfade between looks (day to night, night to morning) and check the total never dips; a dip reads as a muddy grey frame.
+7. **First-watch reading load.** A still sheet hides speed: dreaming v5 passed two blind critics at clarity 8 on 390px sheets and still lost her on her first watch. For each subtitle window, count the new words that arrive on screen (the subtitle plus every new text in the picture: bubbles, cards, tags, labels) and divide by the window's length; count fast-forward texture and repeats apart. Aim for about 6 a second or less in every window, with each key fact settled for 1.5s or more before the next thing moves (dreaming v5: 16.7 a second in its opening, 14.4 in the dream; v6: 6.0 at worst, 5.3 or less elsewhere). Worked example: `./render load` in `reports/videos/dreaming-v6-src/film.swift`.
 
 ---
 
@@ -135,6 +136,7 @@ Zero em dashes and zero semicolons in on-screen copy. Run it on the script or be
 
 - Cold, muted, at phone size. The figure alone should tell the story (brief 24).
 - Hand a **fresh critic subagent** the MP4 (it extracts its own frames), the brief, her own words and the previous critic report. Never your reasoning or your fix list. It marks earlier items FIXED, PARTLY or STILL PRESENT and ends with SHIP or ONE MORE PASS (code-motion-graphics section 5).
+- **First-watch test** (for explainers). Hand a fresh subagent the MP4 alone, under a neutral name: no brief, no other versions, no reasoning. Its method: frames at 4 per second at 390px wide, read in order; a viewer reads about 3 words a second and follows one moving thing at a time; a running "what the viewer understands so far" each second, crediting only text that stayed up long enough to read; every moment a viewer would get lost, with a timestamp and reason; the story questions answered as a one-watch viewer (sure / probably / guessing); a first-watch clarity score. Run the previous cut through the same prompt in parallel as the baseline. Prompt: `reports/videos/dreaming-v6-src/README.md`, review passes.
 - Do not chase metrics. A version that hit every on-beat count still looked cramped (guizang, via code-motion-graphics). Never add meaningless wobble to pass the motion check.
 
 ---
@@ -149,6 +151,7 @@ Zero em dashes and zero semicolons in on-screen copy. Run it on the script or be
 - [ ] Final hold identical for the brief's duration (2.5)
 - [ ] Contact sheet and phone sheet read (2.6, 2.7)
 - [ ] Never two statements on a frame; each 2.5s+; strips read (1.5, 2.8)
+- [ ] Reading load about 6 words a second or less in every subtitle window; first-watch test run against the previous cut (1.7, 3)
 - [ ] End card: official horizontal lockup, no debris
 - [ ] Copy grep clean (2.10)
 
