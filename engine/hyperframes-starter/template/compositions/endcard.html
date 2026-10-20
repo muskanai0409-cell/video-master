@@ -1,0 +1,28 @@
+<template>
+  <style>
+    /* Colourways (brand.md): ink on white (default), paper on blue, paper on ink, blue on paper.
+       Set one class on #endcard-root. The lockup is the official SVG used as a mask, so its
+       geometry is never redrawn; only the fill colour changes. */
+    #endcard-root { position: absolute; inset: 0; background: #ffffff; color: #0b1015; }
+    #endcard-root.on-blue { background: #0562ef; color: #f4f8ff; }
+    #endcard-root.on-ink  { background: #0b1015; color: #f4f8ff; }
+    #endcard-root.on-paper-blue { background: #f4f4f6; color: #0562ef; }
+    #endcard-lockup {
+      position: absolute; left: 50%; top: 50%;
+      width: 960px; height: 115px;            /* 2135x256 viewBox at 0.45x */
+      transform: translate(-50%, -50%);
+      background: currentColor;
+      -webkit-mask: url("assets/brand/lockup.svg") center / contain no-repeat;
+              mask: url("assets/brand/lockup.svg") center / contain no-repeat;
+    }
+  </style>
+  <div id="endcard-root" data-composition-id="endcard" data-width="1920" data-height="1080" data-duration="2.5">
+    <div id="endcard-lockup"></div>
+  </div>
+  <script>
+    // The lockup cuts in on the beat and holds still (end on a still hold of 1.2 to 2s).
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#endcard-lockup", { opacity: 1 }, 0);
+    window.__timelines["endcard"] = tl;
+  </script>
+</template>

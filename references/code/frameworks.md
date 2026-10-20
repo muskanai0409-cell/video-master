@@ -43,16 +43,18 @@ Source: https://raw.githubusercontent.com/athemeroy/awesome-claude-5-5-videos/HE
 
 ## 2. HyperFrames
 
+> **Updated 2026-10-21.** This section was written against 0.8.111 (Oct 2). For any supermemory film, `../hyperframes.md` (0.8.181, installed as the plugin) supersedes it: setup, the contract, craft overrides, QA and open Mac bugs. The fixes below mark the lines that changed.
+
 **Facts:**
 - Repo: https://github.com/heygen-com/hyperframes, Apache-2.0, version 0.8.111, last commit 2026-10-02.
 - npm package: `hyperframes`, needs Node 22+.
 - Docs: https://hyperframes.heygen.com. Markdown copies are at `/llms.txt`, and each page has a `.md` variant.
-- It ships 21 published agent skills and a registry of about 400 blocks and components.
+- It ships 21 published agent skills and a registry of 448 blocks and components (210 blocks, 238 components on 2026-10-21).
 - Command lines in this section use the pinned local CLI (`HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_SKIP_SKILLS=1 npx --no hyperframes ...`). Put `HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_SKIP_SKILLS=1` in front of each one (see Commands below and `setup.md`).
 
 ### How a scene is authored
 
-A video is an HTML file. `data-*` attributes declare timing, and a paused, seekable animation runtime moves things (GSAP by default). The renderer seeks every frame in headless Chrome (BeginFrame capture on Linux with chrome-headless-shell; Page.captureScreenshot on macOS/Windows and for transparent output) and encodes with FFmpeg, so the same input gives the same output.
+A video is an HTML file. `data-*` attributes declare timing, and a paused, seekable animation runtime moves things (GSAP by default). The renderer seeks every frame in headless Chrome (BeginFrame capture on Linux with chrome-headless-shell; Page.captureScreenshot on macOS/Windows and for transparent output) and encodes with FFmpeg, so the same input gives the same output. **Changed by 0.8.181:** on macOS with a hardware GPU the default capture is Chrome's drawElement ("fast capture") with a screenshot fallback, and it can drop a late scene file in renders past about 700 frames (open #5415), so `engine/hyperframes-starter/make.sh` forces screenshot capture.
 
 Contract (HF`skills/hyperframes-core/SKILL.md`, HF`skills/hyperframes-core/references/data-attributes.md`):
 
@@ -93,10 +95,10 @@ Vendor GSAP. With the user's OK, download gsap@3.14.2 once into `assets/gsap.min
   - `Date.now()`, `performance.now()`, unseeded `Math.random()`
   - render-time fetches
   - hover, scroll or pointer state
-  - `repeat: -1`. Use `repeat: Math.max(0, Math.floor(duration / cycleDuration) - 1)`, with floor, not ceil.
+  - `repeat: -1`. Use `repeat: Math.max(0, Math.floor(duration / cycleDuration) - 1)`, with floor, not ceil. (0.8.181 lint only warns when the root duration is finite; keep repeats finite anyway.)
 - **Async builds.** Building inside `document.fonts.ready` is fine if you register the timeline only after the tweens are added. An empty timeline registered early renders blank. One skill says never build in async code; the core skill allows it. Follow core.
 - **Clip elements.** Never tween `display`, `visibility` or `autoAlpha` on a `.clip`; animate a child wrapper. Never set a CSS transform and then tween the same property with GSAP; use `fromTo` or `xPercent`/`yPercent`.
-- **Prefer transforms and opacity.** `filter`, `clipPath`, `width` and `height` are legal but costly.
+- **Transforms and opacity only.** Tweening `width`, `height`, `top`, `left`, `margin`, `letterSpacing` or `fontSize` is a lint error since 0.8.181 (`gsap_non_transform_motion`): layout snaps to whole pixels and slow settles stutter. `filter` and `clipPath` are legal but costly.
 - **Layout constants.** Precompute them at setup. Never call `getBoundingClientRect()` at tween time, because frames are sampled in parallel.
 - **Text:**
   - No `<br>` in body text; wrap with `max-width`.

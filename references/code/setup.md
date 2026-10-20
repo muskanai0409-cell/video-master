@@ -2,6 +2,8 @@
 
 Commands come from the sources linked on each line. The opt-out prefixes, version pins, `npx --no` forms and the localhost server line were written for this skill from the npm, Python and HyperFrames docs. None were run during research, so treat flags as documented, not tested.
 
+> **Updated 2026-10-21.** HyperFrames is installed on her Mac as the Claude Code plugin `hyperframes@hyperframes` (her go-ahead, Oct 21). Run it only through `../../engine/hyperframes-starter/make.sh`, which sets the opt-outs (`HYPERFRAMES_NO_TELEMETRY`, `HYPERFRAMES_SKIP_SKILLS`, `HYPERFRAMES_NO_UPDATE_CHECK`, `HYPERFRAMES_NO_OPTIONAL_INSTALL`). The commands that still need her yes are listed in `../hyperframes.md` §2.
+
 ## The rule: ask first
 
 Installing or running third-party code needs the user's explicit yes, every time, before you do it. That covers:
@@ -40,7 +42,7 @@ When you ask for the first HyperFrames approval, say that the first `doctor`, `p
 | Need | Detail | Source |
 |---|---|---|
 | Node.js 22 or newer | The CLI's `engines` field is `node >=22` | https://raw.githubusercontent.com/heygen-com/hyperframes/HEAD/packages/cli/package.json |
-| FFmpeg and FFprobe on PATH | Docs suggest `brew install ffmpeg` on macOS, `sudo apt install ffmpeg` on Debian/Ubuntu | https://raw.githubusercontent.com/heygen-com/hyperframes/HEAD/docs/guides/troubleshooting.mdx |
+| FFmpeg and FFprobe on PATH, or `HYPERFRAMES_FFMPEG_PATH` / `HYPERFRAMES_FFPROBE_PATH` (0.8.181; this Mac uses Cardboard.app's ffmpeg 6.0 that way, no Homebrew) | Docs suggest `brew install ffmpeg` on macOS, `sudo apt install ffmpeg` on Debian/Ubuntu. The build needs libx264 or a working VideoToolbox H.264 encoder | https://raw.githubusercontent.com/heygen-com/hyperframes/HEAD/docs/guides/troubleshooting.mdx |
 | Chrome | Downloaded automatically. The CLI pins a Chrome build because pixels drift across versions. Manage it, after init and pinning, with `HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_SKIP_SKILLS=1 npx --no hyperframes browser ensure` (also `browser path`, `browser clear`) | https://raw.githubusercontent.com/heygen-com/hyperframes/HEAD/skills/hyperframes-cli/references/doctor-browser.md |
 | Docker | Only for `render --docker` | same |
 | Optional keys | `GEMINI_API_KEY` (AI image captioning in website `capture`), `FIGMA_TOKEN` (Figma import), HeyGen auth (`cloud render`, `publish`) | https://raw.githubusercontent.com/heygen-com/hyperframes/HEAD/.env.example |
@@ -51,9 +53,10 @@ Environment check, run after init and pinning (before that, `npx --no` has no lo
 
 ```bash
 HYPERFRAMES_NO_TELEMETRY=1 HYPERFRAMES_SKIP_SKILLS=1 npx --no hyperframes doctor --json | jq -e '.ok' >/dev/null
+# 0.8.181: .ok also counts optional tools (whisper, Kokoro, MusicGen, Docker), so read the FFmpeg, FFprobe and Chrome rows instead
 ```
 
-**Sandbox caveat.** Seatbelt-style macOS agent sandboxes kill Chromium at startup, so rendering is impossible inside them. Report the blocker, deliver the checked composition, and let the user render outside. The skill says not to build a substitute rasterizer (doctor-browser.md, link above).
+**Sandbox caveat.** (Changed in 0.8.169: Chrome now retries inside a macOS agent sandbox as one process on a software GPU. It works, but slowly and with SwiftShader text artifacts, so still prefer rendering outside.) Seatbelt-style macOS agent sandboxes used to kill Chromium at startup, so rendering was impossible inside them. Report the blocker, deliver the checked composition, and let the user render outside. The skill says not to build a substitute rasterizer (doctor-browser.md, link above).
 
 ### Remotion
 
