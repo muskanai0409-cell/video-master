@@ -42,6 +42,7 @@ For any film with a spoken explainer. Her notes: "we gotta make them have voice 
    - The bed is keyed from the voice 80 ms early, so it is already down on the first syllable.
    - It holds 300 ms across pauses and releases over 450 ms.
    - It sits 19 LU under the voice while she speaks and 12 LU under it in gaps.
+   - The ramp matters as much as the look-ahead (Oct 25, lesson 135). A plain ffmpeg `sidechaincompress` (attack 25 ms, ratio 7) dropped the Claude memory explainer's bed 20 dB within 0.1 s each time the voice came back, which reads as the music stopping. Duck on the voice clock instead: find phrases in the voice track (20 ms RMS over -45 dBFS, gaps under 0.35 s joined), dip about 15 dB on a raised cosine over 0.3 s starting 0.25 s before each phrase, hold through commas, and swell back over 0.7 s. Template: `reports/videos/claude-memory-explainer-src/tools/duck.py`.
 5. **Music grid.** Pick the bed's tempo so the big visual moments land on downbeats (Part 1: 15 bars at 91.4 BPM).
 6. **Captions:** `captions.srt` is written from the final read, for LinkedIn and YouTube.
 

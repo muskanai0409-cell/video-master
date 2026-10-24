@@ -79,6 +79,8 @@ awk -F= '/pts_time/{split($0,a,"pts_time:"); t=a[2]} /YAVG/{n++; d[n]=$2; tt[n]=
 
 On mcp-upload this listed 6 candidates in 1487 frame pairs (for example 10.567s and 21.400s). They are candidates, not defects. Pull a strip at each and look. The pack warns that more than half of automatically flagged "defects" were the detector's fault. Expected pops: a statement or counter digit that appears in one frame. Fix those with a mask rise or a short arrival.
 
+**Glow that switches (WebGL films with bloom).** A difference spike finds a cut, not a step. A glow that switches on or off shows as a one-frame step in the mean brightness that then stays, so also list isolated steps: `|y[i] - y[i-1]| > 1.5` with steady neighbours on both sides, using the YAVG series itself (not the difference). On the Claude memory explainer (Oct 25) this found type drawn at luminance 0.94 under a 0.9 bloom threshold. Every fade crossed the threshold, and the top fact lost a 25-level halo in one frame at 37.6s. Keep type at 0.82 or less, and bisect a step by hiding one object at a time in `make.sh snapshot` frames (lesson 134). Paper or cards that move on twos also step every other frame; those are expected.
+
 ### 2.5 Still ending identical
 
 ```bash
