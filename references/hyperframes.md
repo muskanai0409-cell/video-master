@@ -21,6 +21,7 @@ Checked 2026-10-21 against HyperFrames 0.8.181 (npm, published 2026-10-20), inst
 10. Known bugs on this Mac
 11. What the best HyperFrames films do
 12. What changed since our Oct 2 notes
+13. 3D worlds in CSS (the Preprint v2 build)
 
 ---
 
@@ -248,3 +249,15 @@ From `03_community_and_limits.md` (live X and YouTube numbers, 2026-10-21). Thes
 Breaking: every command rejects extra positional arguments (0.8.113); a root `data-fx-chain` is now the master bus for the whole mix (0.8.150); snapshots and check reports moved to `.hyperframes/artifacts/` (0.8.152); the inspector MCP server was removed (0.8.156).
 
 New and useful: the Studio desktop app and `open`/`catch-up`; `history` begin, end and undo for agent turns; `timeline` edit verbs; `beats` and `audio` (onsets, loudness) without Chrome; `keyframes --shot`; `snapshot --zoom` and `compare`; `data-fade-in/out`, relative timing (`data-start="intro + 0.5"`), `data-color-grading`, `data-vfx-chain`, speed ramps, TypeGPU and frame sources; render inside agent sandboxes; the pinned Chrome always used (0.8.178); a render with no usable encoder now stops before capture (0.8.174); multi-worker empty-frame failures fixed (0.8.180). Full list: `01_docs_cli_changelog.md` §11.
+
+## 13. 3D worlds in CSS (the Preprint v2 build, Oct 26)
+
+A whole film can live in one CSS 3D world without WebGL. Worked example: `~/personal-supermemory/reports/videos/preprint-launch-src/index.html`; lessons 137 and 138.
+
+- **Stage:** a full-frame div with `perspective: 2000px` (origin at the frame centre); inside it a world div with `transform-style: preserve-3d`, and one zero-size wrapper per object, also preserve-3d.
+- **Camera:** an orbit around a focus point. The world's transform is `translateZ(P - dist) translate(960px,540px) rotateX(pitch) rotateY(yaw) translate3d(-fx,-fy,-fz)`, so `dist` is the eye-to-focus distance and the scale at the focus is `P / dist`. Keys are `[t, fx, fy, fz, yaw, pitch, dist, ease]`; IN then OUT through a middle key makes a swoop.
+- **Objects:** a pane is a leaf (`overflow: hidden`, rounded) under a wrapper posed by `[t, x, y, z, ry, hinge, blur, opacity, scale]`. Anchor anything that stands on the floor at its bottom edge (`transform-origin: 50% 100%`), so a `rotateX` hinge stands it up out of the floor or lays it down.
+- **Floor:** a 9000px div turned `rotateX(90deg)` at the floor height, with the brand dots as a repeating radial gradient and a radial mask that fades it out. Light pools and contact shadows are children of the floor, placed at an object's x and z.
+- **Light:** a canvas over the stage, cleared every frame. Beams, threads, pulses and rings use additive blending and are placed from `getBoundingClientRect()` of real elements, or zero-size markers, read after the frame's transforms are set.
+- **Finish:** a sheen gradient on each pane that slides with the pane's angle plus the camera's yaw; depth blur set by role; up to 1.6px of blur on the stage while the camera moves fast; grain as an overlay PNG shifted per frame; a vignette.
+- **Traps:** see lesson 138.
