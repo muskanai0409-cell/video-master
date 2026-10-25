@@ -84,3 +84,7 @@ Why each flag matters (measured, not assumed):
 
 36.8s at 1920x1080x60 with 4 subframes rendered in about 40s (frames one at a time, pixel maths in parallel).
 Stills take a second or two. Iterate on stills and contact sheets; render the full film last.
+
+## blend-kit (Oct 25)
+
+`blend-kit/`: the one-take blend moves (`references/one-take-blend.md`) as pure functions in `template/assets/blend.js`, with a 15s demo in supermemory's brand (zero cuts, 45.5% moving). Copy `template/` to start a film; the moves are kept and the story is replaced.

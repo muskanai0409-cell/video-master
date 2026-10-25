@@ -1,0 +1,70 @@
+# Batch 14: videos she sent with "learn this" (late October 2026)
+
+**Method:** as in batch 13, nothing is downloaded to keep.
+- Frames are read from the post's mp4 by exact seek (`ffmpeg -ss T -i <url> -frames:v 1`), with 2 fps overview sheets and 8-frame strips across every transition.
+- Motion uses the `qa.md` 2.3 metric (`engine/tools/study_video.py <url>`), and motion events come from per-frame YDIF at 320px.
+- The voice is transcribed (ElevenLabs speech-to-text) with word timings, and colours are sampled from decoded 1080p frames.
+
+### 1. @mem0ai · Claude Code memory explainer · 56.1s · 16:9 1080p30 · 2.9K views · [post](https://x.com/mem0ai/status/2105685414430523472)
+
+**Context:**
+- Posted 2026-10-01 and studied 2026-10-25. Stats by then: 2,880 views, 36 likes, 17 bookmarks, 11 replies; 20.6K followers.
+- Post text: "With Mem0 you don't have to re-explain your codebase to Claude Code every single session. Here's how it does that:".
+- She sent it for the motion: "the things are so aesthetic and motion graphic blending one into each other is so much better with them".
+- Grammar extracted to `../../one-take-blend.md`.
+
+**Numbers:**
+- 0 cuts; 49.5% moving; longest still 3.2s.
+- 18 motion events of 0.27 to 2.2s (median 0.87s).
+- -10.9 LUFS, music bed about 117 BPM (estimate).
+- Voiceover: 119 words, 131 wpm, a calm female read, 11 sentences with 0.4 to 1.1s gaps.
+
+**Look:**
+- Pure black ground (#000000). In the middle scenes there is a faint dot grid (#0c0c0c); behind the logo, a faint concentric ripple.
+- A violet horizon glow rises from the bottom edge (#291d4a to #1f1637).
+- One hue in five values: active fill #201840, edge #503890, accent text #8868d8, particles #c898e0, plus the glow.
+- One guest colour, Claude coral (about #e07a5f to #683830), used only as a wash on Claude windows.
+- Type: white UI text in a grotesk, with mono uppercase labels on cards (TOKENS PER QUERY, CODING PATTERN).
+- macOS window chrome with a light title bar; small dark cards with 1px borders.
+- The hook alone uses a photographic planet horizon and an app-icon calendar.
+
+**Beats (voice → picture):**
+- **0.2 "Yesterday, you already told Claude how your codebase works."**
+  - The calendar icon flips TODAY 7 → YESTERDAY 6.
+  - A Claude Code window hinges up out of the planet's horizon (0.43 to 1.0s) and types "Here's how our codebase works: Auth runs through OAuth...".
+  - Memory chips pop around it as each fact is typed (Auth uses OAuth, Uses PostgreSQL, Prefers TypeScript). Each chip carries a tiny coral line graph.
+- **3.7 "Why tell it again?"**
+  - Rack focus from 3.3s: the planet goes black with a violet glow, and the chips stay as blurred depth.
+  - The line resolves word by word, with "again?" in violet.
+- **5.3 "Your projects evolve, but important context can stay stuck in separate sessions and repos."**
+  - The line wipes out right to left.
+  - A new window slides in as a coral block with motion blur and cools into "Welcome to Claude Code / How does auth work in this repo? / Let me explore the codebase first...".
+  - A hairline grows down to "Repo A" among dim repos B to E. Its six dots scatter and orbit it: the agent exploring again.
+- **11.1 "Meet Memzero, which gives Claude Code a persistent memory layer."**
+  - Repo A dims; the mem0 mark resolves from blur over a faint ripple (10.3 to 11.2).
+  - A "Claude Code" chip drops in above on a line, and a curved band opens sideways out of the mark with particles inside (12.8 to 13.3).
+- **16.1 "As you work, Memzero captures what matters: your coding patterns, decisions, preferences, and context."**
+  - The band straightens into a bar (15.6 to 16.1).
+  - The camera eases down, and four category cards resolve on their words (CODING PATTERN · Prefers TypeScript, CONTEXT · Auth uses OAuth, PROJECT DECISION · Uses PostgreSQL, PREFERENCE · Follow existing API patterns).
+  - From 19.3s each card collapses into a violet pill, then a dot, and flies up into the bar.
+- **24.5 "When Claude needs it, Memzero retrieves the relevant memory instead of loading everything."**
+  - The chip grows into a coral-washed window that cools ("Update the authentication flow. / Retrieving context from Mem0.").
+  - The bar fills with violet glow, and lilac dots rise into the window (27.5 to 29).
+- **30.4 "So Claude Code doesn't just write code, it remembers how you work."**
+  - The line turns green ("Recalled 3 memories from Mem0"), then blue ("Updated src/auth/callback.ts").
+  - The window warms and collapses back into the chip (32.1 to 33.6), and a grid of ten repo cards rises on lines from a wider bar.
+- **35.5 "Memzero recalls only what matters using a fraction of the tokens with accurate recall."**
+  - The repos go soft.
+  - Three stat cards count up in turn, each filled violet while active: "~3.5x fewer tokens", "94.4 on LongMemEval", "92.5 on LoCoMo". These are their claims; do not reuse them.
+- **40.7 "It recalls context automatically, shares project knowledge with your team, and learns as you work."**
+  - The bar shrinks into a hub pill.
+  - Four feature cards whip in with motion blur (Recalls automatically, Learns as you work, Shared with your team, Private where it counts), and one violet fill hops between them by phrase.
+- **46.8 "Getting started takes three commands, then just start coding."** Everything goes soft, and a Terminal chip grows into a coral-washed window that types the three plugin commands.
+- **51.8 "Memzero, make every session remember."** The terminal goes soft. The mark appears, the wordmark types in letter by letter with a few stars, and the tagline resolves word by word in violet. One white shimmer sweeps across it, and the film holds on it.
+
+**Why it matters for us:** it moves less than our films (49.5% against 65.5%) but reads smoother. Three things do that:
+- one object carries the whole film;
+- nothing leaves by fading to nothing;
+- the picture starts a breath before each word.
+
+The grammar and how to build it: `../../one-take-blend.md`; the engine: `engine/blend-kit/`.

@@ -174,6 +174,8 @@ The board: twelve boxed pixel-art facts in a 4 × 3 grid, with chatter bubbles i
 
 ## 5. Morph chain (`engine/morph-chain/`, local v0.0.9)
 
+> For a longer voiced explainer where UI objects (windows, chips, a container) become each other with zero cuts, use the one-take blend grammar instead: `one-take-blend.md` and `engine/blend-kit/` (Oct 25).
+
 **The survivor:** one paper container lives on the brand book's dot field. Each state change lands on a beat.
 - **Version:** "v0.0.9" is recalled out of the lattice. It wipes solid, then flies into the corner as the HUD.
 - **Command:** a prompt chip stretches into a command bar, and `docker compose up -d` is typed with one key sound per character.

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <!-- blend-kit demo: the one-take blend moves (references/one-take-blend.md) in supermemory's brand, 15s, zero cuts.
+         One object always carries the frame: a window stands up, its facts become chips, the chips go soft as depth,
+         the tile is born, a band opens out of it and straightens into a bar, the chips are absorbed into the bar,
+         a chip slides in and grows into a window, the bar answers it, the window folds back into its chip, the lockup.
+         Copy this folder to start a film; keep the moves, replace the story. Every value is a pure function of t. -->
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/blend.js"></script>
+    <style>
+      @font-face { font-family: "Geist"; src: url("assets/fonts/Geist.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Geist Mono"; src: url("assets/fonts/GeistMono.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #01030b; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; transform-origin: 50% 50%; font-family: "Geist", sans-serif; color: #eef4ff;
+              -webkit-font-smoothing: antialiased; }
+      /* one hue in five values: pool #031a4a, active fill #0b2a6b, edge #2f86ff, accent text #6fa8ff, particles #9cc3ff */
+      #bg { position: absolute; inset: 0; background:
+              radial-gradient(ellipse 62% 34% at 50% 106%, rgba(5, 98, 239, 0.46), rgba(5, 98, 239, 0) 72%),
+              radial-gradient(ellipse 120% 90% at 50% 38%, #061536 0%, #020818 46%, #01030b 78%); }
+      #grid { position: absolute; inset: 0; opacity: 0.55;
+              background-image: radial-gradient(rgba(156, 195, 255, 0.11) 1px, transparent 1.3px); background-size: 28px 28px;
+              -webkit-mask-image: radial-gradient(ellipse 70% 62% at 50% 50%, #000 30%, transparent 86%); }
+      #fx { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+      .win { position: absolute; overflow: hidden; border-radius: 14px; background: rgba(8, 13, 30, 0.95);
+             border: 1px solid rgba(150, 185, 255, 0.18); box-shadow: 0 34px 90px rgba(0, 0, 0, 0.55); }
+      .bar { height: 44px; background: #dfe6f3; display: flex; align-items: center; padding: 0 18px; gap: 9px; }
+      .bar i { width: 13px; height: 13px; border-radius: 50%; display: block; }
+      .bar span { margin-left: 12px; font-size: 17px; font-weight: 500; color: #1b2333; }
+      .body { padding: 26px 30px; font-family: "Geist Mono", monospace; font-size: 26px; line-height: 40px; color: #cfe0ff; white-space: pre; }
+      .body .p { color: #6fa8ff; }
+      .wash { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(135deg, #0562ef 0%, #0a3fb0 45%, #031a4a 100%); }
+      .chip { position: absolute; display: block; white-space: nowrap; overflow: hidden; border-radius: 12px; padding: 0 20px 0 44px;
+              height: 56px; line-height: 56px; font-size: 23px; color: #e8f0ff; background: rgba(13, 22, 50, 0.94);
+              border: 1px solid rgba(111, 168, 255, 0.3); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45); }
+      .chip::before { content: ""; position: absolute; left: 20px; top: 24px; width: 9px; height: 9px; border-radius: 50%; background: #2f86ff; }
+      .chip .fill { position: absolute; inset: 0; background: #0b5cf0; opacity: 0; }
+      .chip .lab { position: relative; }
+      #st { position: absolute; left: 0; width: 1920px; top: 498px; text-align: center; font-size: 66px; font-weight: 500; letter-spacing: -1.6px; display: block; }
+      #st span { display: inline-block; margin: 0 0.13em; }
+      #st .a { color: #6fa8ff; }
+      #tile { position: absolute; width: 132px; height: 132px; border-radius: 30px; background: #0562ef; }
+      #tile i { position: absolute; left: 50%; top: 50%; width: 58%; height: 58%; transform: translate(-50%, -50%); background: #fff; display: block;
+                -webkit-mask: url("assets/brand/mark.svg") center / contain no-repeat; mask: url("assets/brand/mark.svg") center / contain no-repeat; }
+      #agent { position: absolute; }
+      #agent .lbl { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; text-align: center; font-size: 23px; line-height: 54px; color: #e8f0ff; }
+      #lock { position: absolute; left: 600px; top: 480px; width: 720px; height: 86.3px; background: #fff;
+              -webkit-mask: url("assets/brand/lockup.svg") center / contain no-repeat; mask: url("assets/brand/lockup.svg") center / contain no-repeat; }
+      #tag, #tag2 { position: absolute; left: 0; width: 1920px; top: 610px; text-align: center; font-size: 32px; letter-spacing: -0.4px; display: block; color: #6fa8ff; }
+      #tag span, #tag2 span { display: inline-block; margin: 0 0.12em; }
+      /* the shimmer: a white copy of the line, visible only inside a moving band */
+      #tag2 { color: #ffffff; -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 44%, #000 50%, transparent 56%, transparent 100%);
+              mask-image: linear-gradient(90deg, transparent 0%, transparent 44%, #000 50%, transparent 56%, transparent 100%);
+              -webkit-mask-size: 300% 100%; mask-size: 300% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute">
+      <filter id="mb1" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur id="mb1g" stdDeviation="0 0" /></filter>
+    </svg>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-fps="60" data-width="1920" data-height="1080">
+      <div id="bg" class="clip" data-start="0" data-duration="15" data-track-index="0"></div>
+      <div id="grid" class="clip" data-start="0" data-duration="15" data-track-index="1"></div>
+      <canvas id="fx" class="clip" data-start="0" data-duration="15" data-track-index="2"></canvas>
+      <div id="w1" class="win clip" data-start="0" data-duration="15" data-track-index="3"></div>
+      <div id="c1" class="chip clip" data-start="0" data-duration="15" data-track-index="4"></div>
+      <div id="c2" class="chip clip" data-start="0" data-duration="15" data-track-index="5"></div>
+      <div id="c3" class="chip clip" data-start="0" data-duration="15" data-track-index="6"></div>
+      <div id="st" class="clip" data-start="0" data-duration="15" data-track-index="7"></div>
+      <div id="tile" class="clip" data-start="0" data-duration="15" data-track-index="8"><i></i></div>
+      <div id="agent" class="win clip" data-start="0" data-duration="15" data-track-index="9"></div>
+      <div id="lock" class="clip" data-start="0" data-duration="15" data-track-index="10"></div>
+      <div id="tag" class="clip" data-start="0" data-duration="15" data-track-index="11"></div>
+      <div id="tag2" class="clip" data-start="0" data-duration="15" data-track-index="12"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      (function () {
+        const B = window.BLEND, { ramp, win, lerp, clamp, OUT, INOUT, SOFT, LIN } = B;
+        const FW = 1920, FH = 1080, DUR = 15, DPR = window.devicePixelRatio || 1, $ = (id) => document.getElementById(id);
+        // ---- beats (in a voiced film these key to WORD(line, "...") minus 0.3s) ----
+        const T = { hinge: 0.15, type0: 0.85, focus: 2.6, words: 2.75, wipe: 3.75, tile: 3.95, band: 4.65, bar: 5.25, rise: 5.7,
+                    chips: 5.8, ab: [6.55, 6.85, 7.15], agent: 7.95, grow: 8.3, ask: 9.0, pulse: 9.5, answer: 10.25,
+                    fold: 10.9, out: 11.2, lock: 11.65, tag: 12.4, shine: 12.95, hold: 13.85 };
+        const TF = (t) => Math.min(t, T.hold);                       // everything that drifts freezes for the end hold
+        // the camera: one slow move per idea, eased between keys, so the frame is never dead (her taste: lots of movement)
+        // [time, scale, x, y]: push into the window, ease back for the statement, push as the bar forms, into the agent, back for the lockup
+        const CAM = [[0, 1.0, 0, 0], [2.6, 1.045, 0, -18], [4.4, 1.0, 0, 0], [6.4, 1.04, 0, 22], [8.0, 1.03, -14, 30], [10.8, 1.075, 0, 58],
+                     [11.7, 1.0, 0, 0], [T.hold, 1.012, 0, 0]];
+        function cam(t) {
+          t = TF(t); let i = 0; while (i < CAM.length - 2 && t > CAM[i + 1][0]) i++;
+          const a = CAM[i], b = CAM[i + 1], p = INOUT(clamp((t - a[0]) / (b[0] - a[0]), 0, 1));
+          return { s: lerp(a[1], b[1], p), x: lerp(a[2], b[2], p), y: lerp(a[3], b[3], p) };
+        }
+
+        // ---- window 1: types the facts; each fact becomes a chip as it is typed ----
+        const w1 = $("w1"); w1.style.cssText += "left:560px;top:400px;width:800px;height:360px;transform-origin:50% 100%;";
+        w1.innerHTML = '<div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>your agent</span></div><div class="body" id="w1b"></div>';
+        const W1 = ["> i'm a morning person.", "  i run at 6 a.m., i live in berlin,", "  and i don't eat meat."];
+        const W1N = W1.join("\n").length, CPS = 56;                   // typing speed, characters per second
+        const typedAt = (s) => T.type0 + W1.join("\n").indexOf(s) / CPS + s.length / CPS;
+        const CH = [{ id: "c1", lab: "morning person", at: typedAt("person."), x: 1182, y: 364 },
+                    { id: "c2", lab: "lives in berlin", at: typedAt("berlin,"), x: 470, y: 712 },
+                    { id: "c3", lab: "vegetarian", at: typedAt("meat."), x: 1226, y: 718 }];
+        CH.forEach((c) => { const el = $(c.id); el.innerHTML = `<div class="fill"></div><span class="lab">${c.lab}</span>`; c.el = el; c.h = 56; });
+        // a chip's natural width: 44 + 20 padding + 2 border + its label (the fonts are loaded before any rendered frame)
+        const natW = (c) => { g.font = "400 23px Geist"; return Math.ceil(g.measureText(c.lab).width) + 66; };
+        // where the chips line up under the bar before they are absorbed
+        const ROW = [700, 960, 1220];
+
+        // ---- the statement, the agent window, the tagline ----
+        const ST = ["it", "should", "already", "know."], st = $("st");
+        st.innerHTML = ST.map((w, i) => `<span class="${i >= 2 ? "a" : ""}">${w}</span>`).join("");
+        const stw = [...st.children];
+        const agent = $("agent");
+        agent.innerHTML = '<div class="bar" id="abar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>your agent</span></div>'
+          + '<div class="body" id="ab"></div><div class="wash" id="awash"></div><div class="lbl" id="albl">your agent</div>';
+        const CHIPR = { x: 850, y: 163, w: 220, h: 54, r: 27 }, WINR = { x: 600, y: 90, w: 720, h: 200, r: 14 };
+        const ASK = "> plan my run for tomorrow", ANS = "  ✓ morning person · 6 a.m. · berlin";
+        const tag = $("tag"), TAG = ["memory", "for", "every", "agent"];
+        tag.innerHTML = TAG.map((w) => `<span>${w}</span>`).join(""); $("tag2").innerHTML = tag.innerHTML;
+        const tagw = [...tag.children];
+
+        // ---- the canvas: band and bar, particles, absorbed dots, retrieval dots, connector ----
+        const fx = $("fx"); fx.width = FW * DPR; fx.height = FH * DPR; const g = fx.getContext("2d");
+        const rnd = B.R(7), PART = Array.from({ length: 90 }, () => ({ u: rnd(), v: rnd(), r: 1.2 + rnd() * 1.4, a: 0.35 + rnd() * 0.6, ph: rnd() * 6.28, sp: 0.4 + rnd() * 0.8 }));
+        function barGeom(t) {
+          const open = ramp(t, T.band, T.band + 0.5, INOUT), flat = ramp(t, T.bar, T.bar + 0.5, INOUT), rise = ramp(t, T.rise, T.rise + 0.6, OUT);
+          return { cx: 960, cy: lerp(540, 400, rise), w: lerp(0, 1560, open), h: lerp(150, 104, flat), k: lerp(-46, 0, flat), r: lerp(0, 18, flat), open, flat, rise };
+        }
+        function drawFx(t) {
+          g.setTransform(DPR, 0, 0, DPR, 0, 0); g.clearRect(0, 0, FW, FH);
+          const bg = barGeom(t), tt = TF(t);
+          if (bg.open > 0.002 && t < T.out + 0.9) {
+            const path = B.bandPath(bg.cx, bg.cy, Math.max(bg.w, 1), bg.h, bg.k, bg.r);
+            const absorbed = T.ab.filter((a) => t >= a + 0.87).length;
+            const glow = win(t, T.pulse, T.pulse + 0.4, T.answer, T.answer + 0.7) + 0.6 * T.ab.reduce((s, a) => s + win(t, a + 0.87, a + 0.92, a + 0.95, a + 1.25), 0);
+            const fade = 1 - ramp(t, T.out, T.out + 0.7, LIN);
+            g.save(); g.globalAlpha = fade;
+            g.fillStyle = `rgba(5,98,239,${(0.1 + 0.22 * glow).toFixed(3)})`; g.fill(path);
+            g.save(); g.clip(path);
+            PART.forEach((p, i) => {                                     // the memory inside: drifts, never leaves the container
+              const u = (p.u + tt * 0.012 * p.sp) % 1;
+              const x = bg.cx - bg.w / 2 + u * bg.w + Math.sin(tt * p.sp + p.ph) * 7, y = bg.cy - bg.h / 2 + p.v * bg.h + Math.cos(tt * p.sp * 0.8 + p.ph) * 3;
+              if (Math.abs(x - bg.cx) < 70) return;                      // keep the tile clear
+              g.globalAlpha = fade * p.a * (0.75 + 0.25 * glow) * (i < 70 + absorbed * 6 ? 1 : 0);
+              g.fillStyle = "#9cc3ff"; g.beginPath(); g.arc(x, y, p.r, 0, 6.2832); g.fill();
+            });
+            g.restore();
+            g.globalAlpha = fade; g.lineWidth = 1.5; g.strokeStyle = `rgba(111,168,255,${(0.6 + 0.4 * glow).toFixed(3)})`; g.stroke(path);
+            g.restore();
+          }
+          // absorbed chips in flight: a dot with a short trail (the card itself is the DOM chip until it is a dot)
+          CH.forEach((c, i) => {
+            const s = B.absorb(t, T.ab[i], { x: ROW[i], y: 640, w: natW(c), h: c.h, r: 12 }, { x: 960 + (i - 1) * 230, y: barGeom(t).cy });
+            if (!s.flying) return;
+            s.trail.forEach(([x, y], k) => { g.globalAlpha = 0.5 * (1 - k / 5); g.fillStyle = "#6fa8ff"; g.beginPath(); g.arc(x, y, 5 - k * 0.7, 0, 6.2832); g.fill(); });
+            g.globalAlpha = 1; g.fillStyle = "#bcd6ff"; g.beginPath(); g.arc(s.x, s.y, 5.5, 0, 6.2832); g.fill();
+          });
+          // the connector from the agent window down to the bar, and the retrieval dots rising along it
+          const con = ramp(t, T.grow - 0.1, T.grow + 0.35, OUT) * (1 - ramp(t, T.fold, T.fold + 0.4, LIN));
+          if (con > 0.002) {
+            const y0 = barGeom(t).cy - 52, y1 = lerp(y0, WINR.y + WINR.h, con);
+            g.globalAlpha = 0.7; g.strokeStyle = "#2f86ff"; g.lineWidth = 1.2; g.beginPath(); g.moveTo(960, y0); g.lineTo(960, y1); g.stroke();
+          }
+          for (let i = 0; i < 4; i++) {
+            const t0 = T.pulse + 0.15 + i * 0.07, q = ramp(t, t0, t0 + 0.6, INOUT);
+            if (q <= 0 || q >= 1) continue;
+            const sx = 900 + i * 40, sy = barGeom(t).cy - 40, ex = 680 + i * 30, ey = WINR.y + 44 + 26 + 60, cx = (sx + ex) / 2 + 60, cy = sy - 70;
+            const at = (u) => [(1 - u) * (1 - u) * sx + 2 * (1 - u) * u * cx + u * u * ex, (1 - u) * (1 - u) * sy + 2 * (1 - u) * u * cy + u * u * ey];
+            for (let k = 4; k >= 0; k--) { const [x, y] = at(clamp(q - k * 0.05, 0, 1)); g.globalAlpha = k ? 0.35 * (1 - k / 5) : 1; g.fillStyle = k ? "#6fa8ff" : "#d6e6ff";
+              g.beginPath(); g.arc(x, y, k ? 4 - k * 0.6 : 5, 0, 6.2832); g.fill(); }
+          }
+          g.globalAlpha = 1;
+        }
+
+        function frame(t) {
+          const tt = TF(t), c = cam(t);
+          $("root").style.transform = `translate(${c.x.toFixed(2)}px,${c.y.toFixed(2)}px) scale(${c.s.toFixed(5)})`;
+          // 1. window 1 hinges up out of the ground glow and types the facts
+          const h = B.hinge(ramp(t, T.hinge, T.hinge + 0.7, LIN)), dk = ramp(t, T.focus, T.focus + 0.7), w1f = B.defocus(dk, 12, 0.55);
+          const gone = 1 - ramp(t, T.tile - 0.3, T.tile + 0.3, LIN);
+          w1.style.transform = h.transform; w1.style.opacity = (h.opacity * w1f.opacity * gone).toFixed(3); w1.style.filter = w1f.filter;
+          const n = clamp(Math.floor((t - T.type0) * CPS), 0, W1N);
+          $("w1b").innerHTML = W1.join("\n").slice(0, n).replace(/^> /, '<span class="p">&gt;</span> ') + (t > T.type0 && t < T.focus && Math.floor(t * 2.4) % 2 === 0 ? "|" : "");
+          // 2. chips pop on their words, go soft as depth at the focus pull, come back, line up, and are absorbed
+          CH.forEach((c, i) => {
+            const pop = ramp(t, c.at - 0.05, c.at + 0.35, OUT), back = ramp(t, T.chips, T.chips + 0.5, INOUT), line = ramp(t, T.chips + 0.05, T.chips + 0.65, INOUT);
+            const k = dk * (1 - back), soft = B.defocus(k, 10, 0.5);
+            const drift = 10 * Math.sin(tt * 0.5 + i * 2) * k;
+            const cw = natW(c), s = B.absorb(t, T.ab[i], { x: ROW[i], y: 640, w: cw, h: c.h, r: 12 }, { x: 960, y: 400 });
+            const cx = lerp(c.x + cw / 2 + drift, ROW[i], line), cy = lerp(c.y + c.h / 2, 640, line);
+            const w = t < T.ab[i] ? cw : s.w, hh = t < T.ab[i] ? c.h : s.h;
+            c.el.style.left = (cx - w / 2).toFixed(2) + "px"; c.el.style.top = (cy - hh / 2).toFixed(2) + "px";
+            c.el.style.width = w.toFixed(2) + "px"; c.el.style.height = hh.toFixed(2) + "px"; c.el.style.borderRadius = (t < T.ab[i] ? 12 : s.r).toFixed(2) + "px";
+            c.el.style.padding = t < T.ab[i] ? "" : "0"; c.el.querySelector(".lab").style.opacity = (t < T.ab[i] ? 1 : s.label).toFixed(3);
+            c.el.querySelector(".fill").style.opacity = (t < T.ab[i] ? 0 : s.fill).toFixed(3);
+            c.el.style.opacity = (pop * soft.opacity * (s.flying || s.arrived ? 0 : 1)).toFixed(3);
+            c.el.style.filter = pop < 1 ? B.blur(6 * (1 - pop)) : soft.filter;
+            c.el.style.transform = `scale(${lerp(0.92, 1, pop).toFixed(4)})`;
+          });
+          // 3. the statement resolves word by word, then wipes out right to left
+          stw.forEach((el, i) => { const s = B.wordIn(t, T.words, i, 0.1, 0.45); el.style.opacity = s.opacity.toFixed(3); el.style.filter = s.filter; el.style.transform = s.transform; });
+          st.style.clipPath = B.wipeOut(ramp(t, T.wipe, T.wipe + 0.4, LIN)); st.style.display = t > T.wipe + 0.45 ? "none" : "block";
+          // 4. the tile resolves from blur, becomes the bar's badge, rises with it, and goes soft at the end
+          const bg = barGeom(t), ti = ramp(t, T.tile, T.tile + 0.65, OUT), ts = lerp(132, 76, bg.flat), out = ramp(t, T.out, T.out + 0.7);
+          const tile = $("tile"); tile.style.left = (bg.cx - ts / 2).toFixed(2) + "px"; tile.style.top = (bg.cy - ts / 2).toFixed(2) + "px";
+          tile.style.width = tile.style.height = ts.toFixed(2) + "px"; tile.style.borderRadius = (ts * 0.227).toFixed(2) + "px";
+          tile.style.opacity = (ti * (1 - out)).toFixed(3); tile.style.filter = B.blur(18 * (1 - ti) + 12 * out);
+          tile.style.transform = `scale(${lerp(0.94, 1, ti).toFixed(4)})`;
+          // 5. the agent chip slides in with motion blur, grows into a window under a blue wash that cools, and folds back
+          const slideX = (u) => 340 * (1 - ramp(u, T.agent, T.agent + 0.45, OUT));
+          const grow = ramp(t, T.grow, T.grow + 0.6, INOUT), fold = ramp(t, T.fold, T.fold + 0.55, INOUT);
+          const r = B.morphRect(CHIPR, WINR, grow * (1 - fold));
+          B.place(agent, { ...r, x: r.x + slideX(t) });
+          const moving = B.mblur($("mb1g"), B.speedOf(slideX, t));
+          agent.style.filter = moving ? "url(#mb1)" : (out > 0 ? B.blur(10 * out) : "none");
+          agent.style.opacity = (ramp(t, T.agent, T.agent + 0.12, LIN) * (1 - 0.6 * out) * (1 - ramp(t, T.lock - 0.1, T.lock + 0.4, LIN))).toFixed(3);
+          const wash = B.washBirth(t, T.grow - 0.1, { slide: 0.5, cool: 0.6 }), shut = fold;
+          $("awash").style.opacity = Math.max(t < T.grow - 0.1 ? 0 : wash.wash, ramp(t, T.fold, T.fold + 0.25, LIN) * (1 - ramp(t, T.fold + 0.35, T.fold + 0.6, LIN))).toFixed(3);
+          $("albl").style.opacity = (1 - ramp(t, T.grow, T.grow + 0.2, LIN) + ramp(t, T.fold + 0.35, T.fold + 0.55, LIN)).toFixed(3);
+          const show = wash.content * (1 - ramp(t, T.fold, T.fold + 0.2, LIN));
+          $("abar").style.opacity = show.toFixed(3); $("ab").style.opacity = show.toFixed(3);
+          const na = clamp(Math.floor((t - T.ask) * 60), 0, ASK.length);
+          $("ab").innerHTML = '<span class="p">&gt;</span>' + ASK.slice(1, na) + (t >= T.answer ? "\n" + `<span style="color:#3ddc97">${ANS}</span>` : "");
+          // 6. the lockup: stepped in (mark, then letter by letter), the tagline resolves, one shimmer, then a still hold
+          const lock = $("lock"), cut = B.LOCKUP_STEPS[B.steps(t, T.lock, 12, 0.065)];
+          lock.style.clipPath = `inset(0 ${(100 - cut).toFixed(2)}% 0 0)`; lock.style.opacity = t >= T.lock ? "1" : "0";
+          tagw.forEach((el, i) => { const s = B.wordIn(t, T.tag, i, 0.09, 0.42); el.style.opacity = s.opacity.toFixed(3); el.style.filter = s.filter; el.style.transform = s.transform; });
+          const tag2 = $("tag2"), sh = B.shimmer(ramp(t, T.shine, T.shine + 0.8, LIN));
+          tag2.style.webkitMaskPosition = sh; tag2.style.maskPosition = sh; tag2.style.opacity = t >= T.shine && t <= T.shine + 0.8 ? "1" : "0";
+          drawFx(t);
+        }
+        frame(0);
+        const tl = gsap.timeline({ paused: true });
+        const hf = window.__hyperframes;
+        if (hf && typeof hf.registerFrameSource === "function") {
+          hf.registerFrameSource({ element: fx, ready: document.fonts ? document.fonts.ready : Promise.resolve(), render: (t) => frame(t) });
+        } else {
+          const proxy = { t: 0 };
+          tl.to(proxy, { t: DUR, duration: DUR, ease: "none", onUpdate: () => frame(proxy.t) }, 0);
+        }
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -19,6 +19,7 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [11-more-e.md](11-more-e.md) | more bookmarks E | 31 |
 | [12-more-f.md](12-more-f.md) | more bookmarks F (long podcasts) | 6 |
 | [13-shared-oct.md](13-shared-oct.md) | everything she sent or saved from Oct 6 to 15: "learn this" films, Instagram saves, new bookmarks (3 frame-studied in the browser without downloading; the rest from post data) | 14 |
+| [14-shared-late-oct.md](14-shared-late-oct.md) | what she sent from Oct 16 on with "learn this": the Mem0 Claude Code explainer (one-take blend grammar) | 1 |
 
 ## Launch film (60) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
 
@@ -201,6 +202,7 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [3#29](3-code-craft.md) | [@sudo_kiran](https://x.com/sudo_kiran/status/2104194783178785203) | 30s | 16:9 | 10K | 93% | 0.1s | 8.0 | -13.8 |
 | [8#28](8-more-b.md) | [@DhravyaShah](https://x.com/DhravyaShah/status/2101535378557874196) | 30s | 16:9 | 6K | 13% | 3.9s | 0.0 | -19.1 |
 | [2#25](2-reels-b.md) | [@DhravyaShah](https://x.com/DhravyaShah/status/2100405061994324168) (same video as 2#16) | 36s | 1.60:1 | 4K | 24% | 3.9s | 0.0 | -16.1 |
+| [14#1](14-shared-late-oct.md) | [@mem0ai](https://x.com/mem0ai/status/2105685414430523472) | 56s | 16:9 | 2.9K | 50% | 3.2s | 0.0 | -10.9 |
 
 ## Changelog update (6) · recipe: [`changelog-update.md`](../../recipes/changelog-update.md)
 
