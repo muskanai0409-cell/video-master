@@ -68,3 +68,30 @@
 - the picture starts a breath before each word.
 
 The grammar and how to build it: `../../one-take-blend.md`; the engine: `engine/blend-kit/`.
+
+### 2. @firecrawl · data artifact (Jev + company data) · 8.4s · 16:9 1080p60 · 45.7K views · [post](https://x.com/firecrawl/status/2114761999003340852)
+
+**Context:**
+- Posted 2026-10-26 and studied 2026-10-27. Stats by then: 45,666 views, 623 likes, 671 bookmarks, 32 reposts, 14 replies; 94.4K followers. Bookmarks beat likes, so people saved it as a reference.
+- Post text: "Introducing Jev + Firecrawl company data / Pull company records from Alexandria and let Jev classify them. / We sorted 146 startups by who buys from them in 2.2 seconds."
+- She sent it as the kind of film she wants: "SUPER COOL QUICK MOTION GRAPHIC ARTIFACT FOR SUPERMEMORY". Then: "NOT SAME TO SAME, BUT THE SAME CONCEPT", about where supermemory takes context from and how it builds a memory, "BUT ... WE DONT WNNA MAKE IT CRINGE" (lessons #143).
+- An earlier cut from the same team is `7-more-a.md` #12 (@ericciarla, 5.2s, 132K views).
+
+**Numbers:**
+- 0 cuts; about 61% moving (qa metric); the only long still is the end hold on the wordmark, about 1.8s from 6.6s.
+- Measured from the post's mp4 by exact seek; nothing kept but a 4 fps sheet.
+
+**Look:**
+- A white ground with a fine full-bleed grid; black type; Firecrawl orange as the one accent; the company logos supply every other colour.
+- A big headline sentence whose numbers count, over a dense board.
+
+**Beats:**
+- **0 to 1.7s:** "Enriching company data for 0 → 6 → 22 → 45 → 74 → 108 → 146 startups" while a dense grid of company rows fills in with logos and data.
+- **About 2s:** the rows collapse into their logos, which lift and scatter.
+- **2.5 to 4.5s:** the logos sort into six labelled columns (Businesses, Industry, Healthcare, Consumers, Developers, Other), each with its own counter, under "Jev sorted 0 → 146 startups in 0.00 → 2.15 seconds".
+- **4.5 to 5.5s:** the sorted board holds.
+- **5.5 to 8.4s:** the logos swirl into the flame mark, and the wordmark types in and holds.
+
+**Why it works:** one real dataset, a sentence whose counters run at real speed (the clip's runtime is the claim), a board dense enough to show scale, one transformation (enrich, then sort), and a fast end on the mark.
+
+**Borrow:** the energy: speed, density, a counting headline, one transformation, a fast mark ending. **Don't copy:** the board layout itself (her "not same to same"), their orange, other companies' logos as data. Our versions: `~/personal-supermemory/reports/video-prompts/context-world-concepts-2026-10-27.md` and `cli-artifact-concepts-2026-10-27.md`.
