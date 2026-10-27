@@ -222,7 +222,8 @@ These stay constant in every language:
 - 01 Hip Hop (Yearning 140, Longing 164, Full Moon 154, Regrets);
 - the 160 BPM code synth;
 - the trap lane;
-- 07 Chillwave Chill Melody at 100 BPM (media reel).
+- 07 Chillwave Chill Melody at 100 BPM (media reel);
+- context world v5: a modelled celesta melody over GarageBand's sampled strings and upright bass, in A major, in free time over a 90 BPM eighth grid, with paper foley.
 
 **Unused, with matched keys:**
 - Icy Crystals (A minor), Kyoto Night (B minor), Dreamers (G minor), Ethereal Lounge (F minor), Brooklyn Nights (D minor) and Time Delay (Ab major), all at 100 BPM;

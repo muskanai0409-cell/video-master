@@ -748,3 +748,16 @@ $FF -hide_banner -i "$V" -vn -af ebur128=peak=true -f null - 2>&1 | grep -A14 "S
     - one continuous pull-out;
     - the command types into a 46px end chip.
   - **Pipeline:** render the 4K in parallel slices as separate processes (never threads), each piped straight into x264, then join them with the concat demuxer. Put every compile step on its own line in shell scripts, because `set -e` ignores a failure inside an `&&` chain (the old score binary ran silently).
+| 153 | Oct 27 | context world v4 to v5 | "i think we can add really nice sounds as well in this, just make sure htey are not so ai geenrated, also , i think we need to increase the first prt of 2-3 more seconds it will be better and i think we can make it look more and more aesthetic even the way we are curating the graph" | **Sound that isn't AI-made comes from real instruments, physics and the film's own material, scored as music from the picture's maths. A curated graph is designed placement, not chance.** (1) **Sound:**
+  - No sound generator and no stock tech palette (whooshes, risers, glitches, bleeps, booms).
+  - **Real samples:** GarageBand's own sampled String Ensemble and Upright Jazz Bass are on the Mac (`/Library/Application Support/GarageBand/Instrument Library/Sampler/Sampler Files`, royalty-free inside your own soundtracks). Decode them into `~/Library/Caches`, never a repo. Measure each pitch (A1 was +4 cents and E2 +16) and voice one chord per act.
+  - **A modelled celesta:** a struck steel bar with partials at 1, 2.756, 5.404 and 8.933, decays that shorten as the pitch rises, two near-unison fundamentals and a felt hammer. Each source plays one note as it lights, so the build plays a melody.
+  - **Sounds that tell the story:** paper taps for the 1,024 landings, pencil for the strike and the lines, sand for the forget, a damped note for what is forgotten, and a callback note when a recalled fact returns.
+  - **Timing and level:** everything is timed from `window.__sfx()`, one frame late, and panned where it is seen. Master at -14 LUFS.
+  - **Checking without ears:** windowed RMS per layer, a spectrogram and a click scan. A 0.4s hole at a chord change showed as -35 dB; strings attack slowly, so start the next chord 0.35s early.
+  (2) **A longer opening** goes into the build itself, never into a hold: one source every 1/3 s on a 90 BPM grid, with 1.0s pours.
+  (3) **Curating:** v4 picked lots at random, and the city read as a QR code.
+  - An ordered Bayer dither on a tone that is solid at the core and thins at the edge makes the city one designed object, a rosette.
+  - Each source fills its own slice from the hub outward, pouring as one ribbon through a shared gate.
+  - Dark logos stream paper squares, never black ones.
+  - Waiting logos are greyscale tiles that switch to colour when they send. |
