@@ -223,7 +223,7 @@ These stay constant in every language:
 - the 160 BPM code synth;
 - the trap lane;
 - 07 Chillwave Chill Melody at 100 BPM (media reel);
-- context world v5: a modelled celesta melody over GarageBand's sampled strings and upright bass, in A major, in free time over a 90 BPM eighth grid, with paper foley.
+- 07 Chillwave Night Flight at 90 BPM, F major, with GarageBand strings and real percussion one-shots (context world v5).
 
 **Unused, with matched keys:**
 - Icy Crystals (A minor), Kyoto Night (B minor), Dreamers (G minor), Ethereal Lounge (F minor), Brooklyn Nights (D minor) and Time Delay (Ab major), all at 100 BPM;
