@@ -95,3 +95,62 @@ The grammar and how to build it: `../../one-take-blend.md`; the engine: `engine/
 **Why it works:** one real dataset, a sentence whose counters run at real speed (the clip's runtime is the claim), a board dense enough to show scale, one transformation (enrich, then sort), and a fast end on the mark.
 
 **Borrow:** the energy: speed, density, a counting headline, one transformation, a fast mark ending. **Don't copy:** the board layout itself (her "not same to same"), their orange, other companies' logos as data. Our versions: `~/personal-supermemory/reports/video-prompts/context-world-concepts-2026-10-27.md` and `cli-artifact-concepts-2026-10-27.md`.
+
+### 3. @allophonesystem · Grok Bot integration launch ("give Grok Bot a phone") · 20.2s · 16:9 720p30 · 416K views · [post](https://x.com/allophonesystem/status/2115793573589258279)
+
+**Context:**
+- Posted 2026-10-29 and studied 2026-10-30. Stats by then: 416,378 views, 1,743 likes, 1,116 bookmarks, 110 reposts, 127 replies, 46 quotes.
+- The account had 652 followers. Allo is a business phone system with AI agents (withallo.com).
+- Post text: "We decided to give Grok Bot a phone."
+- She sent [@irapss_ae's quote](https://x.com/irapss_ae/status/2115818559750475813), which says only "JESUS.". He is a motion designer with 1.4K followers, and his quote had 217,967 views and 1,827 bookmarks by Oct 30, more bookmarks than the original.
+- Her words: "omg learn this video omg, add it to our skills this is too good".
+- It launched on the same host, in the same week, as our Supermemory Bot film.
+- The grammar is extracted to `../../character-rebus.md`.
+
+**Numbers:**
+- 3 hard cuts, at 9.73, 12.87 and 15.87. The 0.32 detector found 2 and missed the light-to-light cut at 12.87.
+- 94.7% moving; longest still 0.2s.
+- Music on a 120 BPM grid, -17.0 LUFS.
+- No voiceover. Speech-to-text finds one line inside the story, "Hi, Gonzalo.", at 8.12s.
+- X serves it at 1280x720 at most, although the post's metadata says 1920x1080.
+
+**Look:**
+- **Colours:**
+  - ground #f6f9fc, a cool off-white;
+  - the mascot in pure black with white eyes;
+  - one green, #08a060, on the headset, pills and bubbles, and #088a55 on the phone's screen.
+- **Type:** one centred, sentence-case headline at a time in a black medium grotesk. Cap height 44px of 720.
+- **UI rebuilt in vector:** an iOS home screen with a Dynamic Island call card, message bubbles, a quote card, and a macOS app with a sidebar of agents.
+- **End:** a dark green radial (a #095637 glow at bottom left into #010904), the yellow app icon, white type, and the mascot in white.
+
+**Beats:**
+- **0 to 2.7s:**
+  - The mascot pinballs in, squashing and stretching, and settles.
+  - A green headset arcs onto its head, and the frame punches in on the landing.
+- **2.8 to 4.2s:** "Give your [mascot] a phone": the mascot is the word.
+- **4.3 to 6.2s:** it drops below "Its own number", and a seed dot between "own" and "number" grows into a green number pill.
+- **6.2 to 9.7s:**
+  - The camera tilts down as a phone rises, and the island becomes an incoming call.
+  - The mascot dives into the avatar slot and turns white.
+  - "Gonzalo Rascon" morphs into "Grok Bot · Forwarding Call", the bot says "Hi, Gonzalo.", and "Answers your calls" lands.
+- **9.73 to 12.8s (cut), "Text your customers":**
+  - a typing bubble becomes "Hi Gonzalo! Here's your quote:";
+  - a $1,000.00 quote card resolves beneath it;
+  - the customer replies "Thanks, that was fast!".
+- **12.87 to 15.8s (cut), "Prepares your call-back list" over a macOS app:**
+  - the camera dives into the chat;
+  - "Let's go, I'll call them now." gets the reply "Open Allo and hit Start. I'll text the ones you miss."
+- **15.87 to 20.2s (cut), the dark radial:**
+  - app icon, then the "allo" lockup;
+  - then "Connect Allo to Grok Bot", with the mascot grown out of a seed dot between "to" and "Grok Bot";
+  - a living hold to the end.
+
+**Why it works:**
+- The host's mascot carries the story and wears the product.
+- A sentence with the mascot inside it opens and closes the film.
+- The story runs as one take; the proof cuts on the beat.
+- Every headline is a verb with the bot as its subject, proved by UI underneath within a second.
+
+**Borrow:** the rebus line, the seed-dot pill, the gaze rig, the dive into a UI slot, the per-letter morph, the anchored bubbles, the logo turning into a word.
+
+**Don't copy:** Allo's green, icon, headset idea, lines or UI. Don't dress or animate Grok Bot's mascot without her OK; our rule is "as @bot draws it".

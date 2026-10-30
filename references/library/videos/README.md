@@ -19,9 +19,9 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [11-more-e.md](11-more-e.md) | more bookmarks E | 31 |
 | [12-more-f.md](12-more-f.md) | more bookmarks F (long podcasts) | 6 |
 | [13-shared-oct.md](13-shared-oct.md) | everything she sent or saved from Oct 6 to 15: "learn this" films, Instagram saves, new bookmarks (3 frame-studied in the browser without downloading; the rest from post data) | 14 |
-| [14-shared-late-oct.md](14-shared-late-oct.md) | what she sent from Oct 16 on with "learn this": the Mem0 Claude Code explainer (one-take blend grammar), Firecrawl's Jev data artifact (quick counting board) | 2 |
+| [14-shared-late-oct.md](14-shared-late-oct.md) | what she sent from Oct 16 on with "learn this": the Mem0 Claude Code explainer (one-take blend grammar), Firecrawl's Jev data artifact (quick counting board), Allo's Grok Bot launch (character rebus) | 3 |
 
-## Launch film (60) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
+## Launch film (61) · recipe: [`launch-film.md`](../../recipes/launch-film.md)
 
 | Ref | Post | Length | Aspect | Views | Moving | Still | Cuts | LUFS |
 |---|---|---|---|---|---|---|---|---|
@@ -94,6 +94,7 @@ Every video in her X bookmarks: 295 posts, 319 video files, 304 unique videos (J
 | [7#27](7-more-a.md) | [@DhravyaShah](https://x.com/solofounders/status/2065199215870157304) | 77s | 16:9 | 6K | 64% | 1.6s | 12.5 | -11.7 |
 | [9#29](9-more-c.md) | [@shengkunye](https://x.com/shengkunye/status/2090193060508647798) | 68s | 16:9 | 6K | 80% | 1.3s | 0.0 | -14.6 |
 | [3#34](3-code-craft.md) | [@kunalbagaria](https://x.com/kunalbagaria/status/2105992661903761572) | 30s | 16:9 | 3K | 96% | 0.5s | 18.0 | -13.9 |
+| [14#3](14-shared-late-oct.md) | [@allophonesystem](https://x.com/allophonesystem/status/2115793573589258279) | 20s | 16:9 | 416K | 95% | 0.2s | 8.9 | -17.0 |
 
 ## Product demo (49) · recipe: [`product-demo.md`](../../recipes/product-demo.md)
 
