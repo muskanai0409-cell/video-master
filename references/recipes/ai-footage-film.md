@@ -6,7 +6,7 @@ Generated video plates (people, places, light, physical effects) cut together un
 
 **Not when** the product UI is the hero. The UI-led films in the same batch carry 28 to 75s on rebuilt UI alone, with 0 to 2 cuts (4#3, 4#10, 4#17, 4#23).
 
-**On supermemory** AI footage is out unless she asks for it. The brand film (`field.mp4`) is the moving background, and product proof is always rebuilt UI. Ask before installing or paying for any generation tool.
+**On supermemory** AI footage is out unless she asks for it. She asked for it on Oct 30 for the Claude Code plugin film (lessons #174): photoreal Hollywood genre scenes with a real-looking actress, made in Cardboard (`cardboard` skill: cast sheets, Veo 3.1, Kling 3.0 Pro, Wan 3.0). Worked example: `reports/videos/claude-code-plugin-film-src/`. The brand film (`field.mp4`) is the moving background, and product proof is always rebuilt UI. Ask before installing or paying for any generation tool.
 
 ## Targets
 
@@ -66,6 +66,6 @@ Generated video plates (people, places, light, physical effects) cut together un
 
 ## Build it here
 
-- Plates: generated outside this pipeline, with her OK for each tool and download. Drop them into `reports/videos/<name>-src/plates/`.
+- Plates: Cardboard (`cb generate`, her account, credits about a cent each): a cast sheet for each recurring person, one still per shot for her approval (8.1 credits), then video. Other tools need her OK for each tool and download. Drop them into `reports/videos/<name>-src/plates/`.
 - Compositing: the Swift pipeline reads frames as a raw plate, the way `engine/console-film/film_bg.swift` samples the brand film. Draw all type, pills and UI in CoreText and CoreGraphics on top.
 - QA: `qa.md`, plus a drift check: a contact sheet of every shot of the recurring character.
